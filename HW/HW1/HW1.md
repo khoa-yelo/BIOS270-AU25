@@ -1,13 +1,10 @@
 # HW1: Farmshare Login + Learning Git + Jira
 
 ## Goals
-- Setup Farmshare and Github
 - Understand what version control and Git are.
 - Practice core Git workflows: clone, branch, commit, push, and pull request.
-- Learn how to use Jira for task management
 
----
-**Create a [GitHub](https://github.com/) account** (if you don’t have one).
+
 
 ## Farmshare Setup
 
@@ -65,7 +62,7 @@ cd $SCRATCH
 
 ---
 
-## HW Part A - Watch Intro Videos (~15 mins)
+## HW Part A - Watch (Intro Videos)
 - [What is Version Control?](https://git-scm.com/video/what-is-version-control.html)
 - [What is Git?](https://git-scm.com/video/what-is-git.html)
 
@@ -77,15 +74,16 @@ Complete the exercises at **https://learngitbranching.js.org/**
 - **Main** tab → **Introduction Sequence** (complete **all 4** modules)
 - **Remote** tab → **Push & Pull — Git Remotes!** (complete **all 8** modules)
 
-> Instruction: Take screenshots of the “level complete” screens—you’ll paste them below.
+> Tip: Take screenshots of the “level complete” screens—you’ll paste them below.
 
 ---
 
 ## HW Part C - Practice
 
-1. **Fork** the course [repository](https://github.com/khoa-yelo/BIOS270-AU25) to your GitHub account.
+1. **Create a [GitHub](https://github.com/) account** (if you don’t have one).
+2. **Fork** the course [repository](https://github.com/khoa-yelo/BIOS270-AU25) to your GitHub account.
 ![github_fork](./images/github_fork.png)
-2. **Clone** your fork (not the original course repo) to Farmshare via ssh:
+3. **Clone** your fork (not the original course repo) to your local machine via ssh:
    ```bash
    cd $SCRATCH
    mkdir repos
@@ -93,24 +91,21 @@ Complete the exercises at **https://learngitbranching.js.org/**
    git clone git@github.com:[your-user-name]/BIOS270-AU25.git
    cd BIOS270-AU25
    ```
-3. **Create a new branch** for your changes and **checkout** that branch:
+4. **Create a new branch** for your changes and **checkout** that branch:
 
-4. **Edit the write-up**  
+5. **Edit the write-up**  
    - Open `Writeup0.md`
    - Modify **Name** and **SUNetID** to your name and SUNetID
 
-5. **Complete HW Submission section**  
-   - Complete HW submission by including screenshots and answer some questions (HW Part A, B)
-   To copy screenshot images from your laptop to Farmshare, use `scp` on your laptop terminal
-   ```bash
-   scp <path-to-your-image> <SUNetID>@login.farmshare.stanford.edu:<full-path-to-your-repo-directory-on-farmshare> 
-   ```
-6. **Commit your changes**  
-   Since there are two conceptual tasks (editing `Writeup0.md` and `HW Submission`), consider having **two separate commits**:
+6. **Add tutorial screenshots**  
+   - Append them at the end of this document (see section below).
 
-7. **Push your branch to your forked repo**:
+7. **Commit your changes**  
+   Since there are two conceptual tasks (editing `Writeup0.md` and adding screenshots), consider having **two separate commits**:
 
-8. **Open a Pull Request (PR)**  
+8. **Push your branch to your forked repo**:
+
+9. **Open a Pull Request (PR)**  
    - Base: **your fork’s** `main`  
    - Compare: `your-new-branch`  
    - Add a title and short description, then **Create PR**.
@@ -122,7 +117,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
 ## HW Part D - Jira (Optional)
 
 ### Why use Jira?
-As a project grows and more people get involved, it becomes harder to keep track of what are all the tasks, who’s doing what and how different pieces fit together.  
+As a project grows and more people get involved, it becomes harder to keep track of who’s doing what and how different pieces fit together.  
 **Jira** helps teams plan, track, and organize their work. It connects with **GitHub** so that each commit, branch, or pull request can be linked to a specific task. This makes it easier to see **who is doing what**, **what’s done**, and **what’s left**.
 
 ---
@@ -141,7 +136,6 @@ As a project grows and more people get involved, it becomes harder to keep track
    - In Jira, click **Code** and select **Connect Github**.  
    - Follow the prompts to connect your GitHub account.  
    - This allows Jira to automatically link commits and pull requests to issues.
-   ![jira_code_git](./images/jira_code_git.png)
 
 4. **Create a Task**  
    - Create a **Task** called “HW1” and fill out the content (e.g. Title, Description, Due Date, Assignee, etc...)
@@ -157,47 +151,27 @@ As a project grows and more people get involved, it becomes harder to keep track
    git checkout -b BIOS-1-hw1
    ```
    - Create some changes in this `HW1.md`, for example, change this SUNetID to yours `khoang99`
-   - Commit with task ID in message then push the changes
-   
-   ```
-   git commit -m "BIOS-1: update hw1 in Jira section"
-   ```
-   - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1).
+   - Commit and push
+   - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1) then merge.
 
 6. **Check back on Jira Task**
-   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? **Take a screenshot to show this**. For example, and attach in the `HW submission` section. Then commit, push, and merge your PR.
-   ![jira_pr_link](./images/jira_pr_link.png)
+   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? This is neat, isn't it!
 
+## Screenshots of Git Tutorials
+
+> Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
+
+- Introduction Sequence — 4/4 complete:  
+  _Paste image(s) here_
+
+- Push & Pull — Git Remotes! — 8/8 complete:  
+  _Paste image(s) here_
 
 ---
 
 ## HW Submission
 
-**HW Part A**
-Answer the following questions:
-- Fill in the blank: "Git provides a ... of content changes"
-
-- Which git command shows you the historical graphical representation of branching and merging events?
-
-**HW Part B**
-
-> Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
-
-- Introduction Sequence — 4/4 complete:  
-  _Attach image(s) here_
-
-- Push & Pull — Git Remotes! — 8/8 complete:  
-  _Attach image(s) here_
-
-**HW Part C**
-
-- Submit the **URL of this Markdown file** to **Canvas** after you are done. This is the github URL to files in your fork repo on `main` branch.
-
-**HW Part D (optional)**
-- Screenshot of PR link on Jira task
-
-   _Attach image(s) here_
-
+Submit the **link to this Markdown file** to **Canvas**.
 
 ---
 

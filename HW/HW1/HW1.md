@@ -152,7 +152,11 @@ As a project grows and more people get involved, it becomes harder to keep track
    git checkout -b BIOS-1-hw1
    ```
    - Create some changes in this `HW1.md`, for example, change this SUNetID to yours `khoang99`
-   - Commit and push
+   - Commit with task ID in message then push the changes
+   
+   ```
+   git commit -m "BIO-1: update hw1 in Jira section"
+   ```
    - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1) then merge.
 
 6. **Check back on Jira Task**

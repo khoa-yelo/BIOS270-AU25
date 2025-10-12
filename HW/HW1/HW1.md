@@ -3,6 +3,7 @@
 ## Goals
 - Understand what version control and Git are.
 - Practice core Git workflows: clone, branch, commit, push, and pull request.
+- Learn how to use Jira for task management
 
 
 
@@ -62,7 +63,7 @@ cd $SCRATCH
 
 ---
 
-## HW Part A - Watch (Intro Videos)
+## HW Part A - Watch Intro Videos (~15 mins)
 - [What is Version Control?](https://git-scm.com/video/what-is-version-control.html)
 - [What is Git?](https://git-scm.com/video/what-is-git.html)
 
@@ -156,6 +157,8 @@ As a project grows and more people get involved, it becomes harder to keep track
 
 6. **Check back on Jira Task**
    - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? This is neat, isn't it!
+   ![jira_pr_link](./images/jira_pr_link.png)
+
 
 ## Screenshots of Git Tutorials
 

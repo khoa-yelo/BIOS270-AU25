@@ -137,6 +137,7 @@ As a project grows and more people get involved, it becomes harder to keep track
    - In Jira, click **Code** and select **Connect Github**.  
    - Follow the prompts to connect your GitHub account.  
    - This allows Jira to automatically link commits and pull requests to issues.
+   ![jira_code_git](./images/jira_code_git.png)
 
 4. **Create a Task**  
    - Create a **Task** called “HW1” and fill out the content (e.g. Title, Description, Due Date, Assignee, etc...)

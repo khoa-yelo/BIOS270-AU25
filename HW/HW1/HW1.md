@@ -102,7 +102,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
    - Open `Writeup0.md`
    - Modify **Name** and **SUNetID** to your name and SUNetID
 
-6. **Add tutorial screenshots**  
+6. **Add tutorial screenshots (HW part B)**  
    - Append them at the end of this document (see section below).
 
 7. **Commit your changes**  

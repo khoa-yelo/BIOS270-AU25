@@ -88,7 +88,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
 1. **Create a [GitHub](https://github.com/) account** (if you don’t have one).
 2. **Fork** the course [repository](https://github.com/khoa-yelo/BIOS270-AU25) to your GitHub account.
 ![github_fork](./images/github_fork.png)
-3. **Clone** your fork (not the original course repo) to your local machine via ssh:
+3. **Clone** your fork (not the original course repo) to Farmshare via ssh:
    ```bash
    cd $SCRATCH
    mkdir repos

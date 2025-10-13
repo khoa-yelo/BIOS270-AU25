@@ -67,6 +67,10 @@ cd $SCRATCH
 - [What is Version Control?](https://git-scm.com/video/what-is-version-control.html)
 - [What is Git?](https://git-scm.com/video/what-is-git.html)
 
+Answer the following questions:
+- Fill in the blank: "Git provides a ... of content changes"
+- Which git command shows you the historical graphical representation of branching and merging events?
+
 ---
 
 ## HW Part B - Interactive Tutorial

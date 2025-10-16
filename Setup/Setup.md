@@ -1,6 +1,6 @@
 # Overview
 
-This guide walks you through setting up a productive computing environment for your coursework and future research. This includes command-line shortcuts, environment management, data management, and pipeline development tools, and cloud or GPU resources for your machine learning projects.
+This guide helps you set up an efficient computing environment for coursework and research, including command-line shortcuts, environment and data management, workflow tools, and access to cloud/GPU resources for machine learning projects.
 
 ---
 
@@ -10,7 +10,7 @@ This guide walks you through setting up a productive computing environment for y
 
 
 
-> **Note:** Include **screenshots** and **code snippets** in your *Write-up 1* to document your work clearly.
+> **Note:** Include **screenshots** and **code snippets** in your Write-up to document your work.
 
 ---
 
@@ -104,27 +104,22 @@ micromamba --version
 
 ### 2. Install **Docker Desktop**
 
-Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your operating system.  
-We’ll use it to build and push container images in later exercises.
+Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your operating system.  We’ll use it to build and push container images in later exercises.
 
-You’ll also need:
-- [**Stanford GitLab**](https://gitlab.stanford.edu/): create a new project named `containers` and set up SSH keys.  
+You’ll also need a place to store your container images. We'll practice pushing images to Docker Hub for public images and Stanford Gitlab Container Registry, where you can store your private images   
+- [**Stanford GitLab**](https://gitlab.stanford.edu/): sign-in and create a new project named `containers`.  
 - [**Docker Hub**](https://hub.docker.com/signup): create an account.
 
 ---
 
 ## Tools for Managing Your Data
 
-Set up **Google Cloud Platform (GCP)** using your **personal email** (Stanford email addresses cannot be used to create new projects).
+Set up **Google Cloud Platform (GCP)** using your **personal email** (as Stanford requires approval to create new projects with Stanford email).
 
 - New users receive **$300 in free credits**.
-- Otherwise, enter billing info — we’ll stay within the free tier.
+- Otherwise, enter your billing information. We’ll keep all activities within the free tier, or under $10 total for the entire course.(TODO: update if Google Cloud credit approved)
+- Create a new project named `BIOS270`
 
-You’ll use:
-- [**Google Cloud Storage (GCS)**](https://cloud.google.com/storage) – for large data storage  
-- [**Google BigQuery**](https://cloud.google.com/bigquery) – for SQL analytics  
-- [**SQLiteStudio**](https://sqlitestudio.pl/) – for local SQL testing  
-- [**Google Sheets**](https://sheets.google.com) – for data summaries and reports  
 
 ---
 
@@ -132,6 +127,11 @@ You’ll use:
 
 - Install [**Nextflow**](https://www.nextflow.io/) for workflow management and pipeline automation.
 
+```bash
+curl -s https://get.nextflow.io | bash
+# To confirm it's installed correctly
+nextflow info
+```
 ---
 
 ## Tools for Machine Learning Projects
@@ -141,18 +141,20 @@ You’ll need access to **GPUs** for training your ML models.
 ### Option 1: Google Cloud Platform (Recommended)
 - Use [**Vertex AI Workbench**](https://cloud.google.com/vertex-ai/docs/workbench) for Jupyter-based GPU training.  
 - New accounts have **$300 credits**.  
-- Request increased GPU quota under **`metrics:gpu_all_regions`** in GCP Console.  
-- Create and test a new instance.
+- Request increased GPU quota under **`metric: compute.googleapis.com/gpus_all_regions`** in `IAM & Admin` -> `Quotas & System limits`.  
+- When approved, create and test a new gpu instance.
 
 ### Option 2: **Google Colab Pro**
-Sign up with your Stanford email — it’s free for students.  
-[Sign up here](https://colab.research.google.com/signup).  
+Sign up with your Stanford email, it’s free for students. [Sign up here](https://colab.research.google.com/signup).  
 Save Colab compute units for Project 2.
 
-### Option 3: **Runpod Credits (if needed)**
-If Colab or GCP are unavailable, fill out the provided Google Form to request **Runpod credits** and set up a [Runpod](https://www.runpod.io/) account.
+### Option 3: **Runpod Credits**
+If Colab or GCP are unavailable to you, fill out this [form](https://forms.gle/eQkLCXcMB6v9LpU9A) to request **Runpod credits** and set up a Runpod account using this [link](https://runpod.io?ref=04hpenbb)
 
 ---
+
+
+For your future GPU usage after this course, Stanford offers 5,000 GPU hours for free on [Marlowe](https://datascience.stanford.edu/marlowe/marlowe-access), talk to your PI to apply! 
 
 ### (Optional) **Weights & Biases**
 

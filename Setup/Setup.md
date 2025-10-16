@@ -1,4 +1,4 @@
-# Overview
+# Setup
 
 This guide helps you set up an efficient computing environment for coursework and research, including command-line shortcuts, environment and data management, workflow tools, and access to cloud/GPU resources for machine learning projects.
 
@@ -114,7 +114,7 @@ You’ll also need a place to store your container images. We'll practice pushin
 
 ## Tools for Managing Your Data
 
-Set up **Google Cloud Platform (GCP)** using your **personal email** (as Stanford requires approval to create new projects with Stanford email).
+Set up [**Google Cloud Platform (GCP)**](https://cloud.google.com/) using your **personal email** (as Stanford requires approval to create new projects with Stanford email).
 
 - New users receive **$300 in free credits**.
 - Otherwise, enter your billing information. We’ll keep all activities within the free tier, or under $10 total for the entire course.(TODO: update if Google Cloud credit approved)
@@ -125,7 +125,7 @@ Set up **Google Cloud Platform (GCP)** using your **personal email** (as Stanfor
 
 ## Tools for Pipeline Development
 
-- Install [**Nextflow**](https://www.nextflow.io/) for workflow management and pipeline automation.
+- Install [**Nextflow**](https://www.nextflow.io/) on Farmshare for pipeline developement.
 
 ```bash
 curl -s https://get.nextflow.io | bash

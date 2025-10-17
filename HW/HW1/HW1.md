@@ -157,7 +157,7 @@ As a project grows and more people get involved, it becomes harder to keep track
    ```
    git commit -m "BIOS-1: update hw1 in Jira section"
    ```
-   - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1) then merge.
+   - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1).
 
 6. **Check back on Jira Task**
    - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? **Take a screenshot to show this**. For example, and attach in the `HW submission` section. Then commit, push, and merge your PR.

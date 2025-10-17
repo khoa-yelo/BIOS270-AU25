@@ -67,10 +67,6 @@ cd $SCRATCH
 - [What is Version Control?](https://git-scm.com/video/what-is-version-control.html)
 - [What is Git?](https://git-scm.com/video/what-is-git.html)
 
-Answer the following questions:
-- Fill in the blank: "Git provides a ... of content changes"
-- Which git command shows you the historical graphical representation of branching and merging events?
-
 ---
 
 ## HW Part B - Interactive Tutorial
@@ -79,7 +75,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
 - **Main** tab → **Introduction Sequence** (complete **all 4** modules)
 - **Remote** tab → **Push & Pull — Git Remotes!** (complete **all 8** modules)
 
-> Tip: Take screenshots of the “level complete” screens—you’ll paste them below.
+> Instruction: Take screenshots of the “level complete” screens—you’ll paste them below.
 
 ---
 
@@ -102,11 +98,11 @@ Complete the exercises at **https://learngitbranching.js.org/**
    - Open `Writeup0.md`
    - Modify **Name** and **SUNetID** to your name and SUNetID
 
-6. **Add tutorial screenshots (HW part B)**  
-   - Append them at the end of this document (see section below).
+6. **Complete HW Submission section**  
+   - Complete HW submission by including screenshots and answer some questions.
 
 7. **Commit your changes**  
-   Since there are two conceptual tasks (editing `Writeup0.md` and adding screenshots), consider having **two separate commits**:
+   Since there are two conceptual tasks (editing `Writeup0.md` and `HW Submission`), consider having **two separate commits**:
 
 8. **Push your branch to your forked repo**:
 
@@ -165,25 +161,39 @@ As a project grows and more people get involved, it becomes harder to keep track
    - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1) then merge.
 
 6. **Check back on Jira Task**
-   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? This is neat, isn't it!
+   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? **Take a screenshot to show this**. For example,
    ![jira_pr_link](./images/jira_pr_link.png)
 
-
-## Screenshots of Git Tutorials
-
-> Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
-
-- Introduction Sequence — 4/4 complete:  
-  _Paste image(s) here_
-
-- Push & Pull — Git Remotes! — 8/8 complete:  
-  _Paste image(s) here_
 
 ---
 
 ## HW Submission
 
-Submit the **link to this Markdown file** to **Canvas**.
+**HW Part A**
+Answer the following questions:
+- Fill in the blank: "Git provides a ... of content changes"
+
+- Which git command shows you the historical graphical representation of branching and merging events?
+
+**HW Part B**
+
+> Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
+
+- Introduction Sequence — 4/4 complete:  
+  _Attach image(s) here_
+
+- Push & Pull — Git Remotes! — 8/8 complete:  
+  _Attach image(s) here_
+
+**HW Part C**
+
+- Submit the **URL of this Markdown file** to **Canvas** after you are done. This should be the URL to files in  your fork repo.
+
+**HW Part D (optional)**
+- Screenshot of PR link on Jira task
+
+   _Attach image(s) here_
+
 
 ---
 

@@ -92,6 +92,12 @@ if align_clicked:
             else:
                 st.info("No comparable (non-gap) positions to plot.")
 
+            fig = px.histogram(
+                vals,
+                nbins=10,
+                title="Distribution of Match Values (Match=1, Mismatch=0)",
+            )
+            st.plotly_chart(fig, use_container_width=True)
             # Download
             out_text = (
                 f">seq1_aligned\n{alnA}\n>seq2_aligned\n{alnB}\n# score={score}\n"
@@ -105,5 +111,6 @@ if align_clicked:
         except Exception as e:
             st.error(f"Alignment failed: {e}")
             st.exception(e)
+
 st.markdown("---")
 st.markdown("© 2025 BIOS270-AU25 Course")

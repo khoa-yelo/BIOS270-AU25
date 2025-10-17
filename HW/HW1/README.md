@@ -99,7 +99,10 @@ Complete the exercises at **https://learngitbranching.js.org/**
 
 6. **Complete HW Submission section**  
    - Complete HW submission by including screenshots and answer some questions (HW Part A, B)
-
+   To copy screenshot images from your laptop to Farmshare, use `scp` on your laptop terminal
+   ```bash
+   scp <path-to-your-image> <SUNetID>@login.farmshare.stanford.edu:<full-path-to-your-repo-directory-on-farmshare> 
+   ```
 7. **Commit your changes**  
    Since there are two conceptual tasks (editing `Writeup0.md` and `HW Submission`), consider having **two separate commits**:
 

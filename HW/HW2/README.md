@@ -4,12 +4,20 @@
 - Practice building Streamlit App with Streamlit and Plotly 
 - Learn how to deploy and share a Streamlit app using Streamlit Cloud.
 
+> Tip: This HW is light enough to be run locally. Run on your laptop instead of Farmshare so that you don't need to worry about port fowarding to use your browser.
 ---
 
 ## Part 1 — TODO Tasks
 
+To run the app locally for testing:
+
+```bash
+streamlit run app.py
+```
+You will need to install packages in `requirement.txt`. You should be expert in Environment management by the end of lecture 2, so I'll let you handle it :) 
+
 ### TODO 1 - Add a Logo or Header Image
-At the very top of the Streamlit app, add a course logo or banner.  
+At the very top of the Streamlit app, add an image as your app logo
 
 ```python
 # TODO 1: Add a logo or image above the title, replace with your favorite image

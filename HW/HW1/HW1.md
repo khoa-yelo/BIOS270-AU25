@@ -1,11 +1,10 @@
 # HW1: Farmshare Login + Learning Git + Jira
 
 ## Goals
+- Setup Farmshare and Github
 - Understand what version control and Git are.
 - Practice core Git workflows: clone, branch, commit, push, and pull request.
 - Learn how to use Jira for task management
-
-
 
 ## Farmshare Setup
 
@@ -99,7 +98,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
    - Modify **Name** and **SUNetID** to your name and SUNetID
 
 6. **Complete HW Submission section**  
-   - Complete HW submission by including screenshots and answer some questions.
+   - Complete HW submission by including screenshots and answer some questions (HW Part A, B)
 
 7. **Commit your changes**  
    Since there are two conceptual tasks (editing `Writeup0.md` and `HW Submission`), consider having **two separate commits**:
@@ -118,7 +117,7 @@ Complete the exercises at **https://learngitbranching.js.org/**
 ## HW Part D - Jira (Optional)
 
 ### Why use Jira?
-As a project grows and more people get involved, it becomes harder to keep track of who’s doing what and how different pieces fit together.  
+As a project grows and more people get involved, it becomes harder to keep track of what are all the tasks, who’s doing what and how different pieces fit together.  
 **Jira** helps teams plan, track, and organize their work. It connects with **GitHub** so that each commit, branch, or pull request can be linked to a specific task. This makes it easier to see **who is doing what**, **what’s done**, and **what’s left**.
 
 ---
@@ -161,7 +160,7 @@ As a project grows and more people get involved, it becomes harder to keep track
    - Create a PR to main, title the PR with task ID (e.g. BIOS-1: Update HW1) then merge.
 
 6. **Check back on Jira Task**
-   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? **Take a screenshot to show this**. For example,
+   - Now, check your task on Jira, do you notice that the PR and commit has been linked to your task description? **Take a screenshot to show this**. For example, and attach in the `HW submission` section. Then commit, push, and merge your PR.
    ![jira_pr_link](./images/jira_pr_link.png)
 
 
@@ -187,7 +186,7 @@ Answer the following questions:
 
 **HW Part C**
 
-- Submit the **URL of this Markdown file** to **Canvas** after you are done. This should be the URL to files in  your fork repo.
+- Submit the **URL of this Markdown file** to **Canvas** after you are done. This is the github URL to files in your fork repo on `main` branch.
 
 **HW Part D (optional)**
 - Screenshot of PR link on Jira task

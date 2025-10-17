@@ -77,12 +77,11 @@ HW2_Streamlit/
 ### Step 2. Deploy to Streamlit Cloud
 1. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)  
 2. Click **“Deploying” (Free)** → Connect your GitHub account.  
-3.  **Create App** -> Select your repo, branch (e.g. `main`), and main file (`app.py`).  
+3.  **Create App** -> Select your repo, branch (e.g. `main`), and main file (`app.py`), modify your `domain` name.  
 4. Click **Deploy**.  
 5. Wait for your app to build — it will give you a public URL like:
-   ```
-   https://your-repo-sometext.streamlit.app
-   ```
+   https://bios270-au25-hw2-example.streamlit.app/
+
 
 ### Step 3. Test and Submit
 Once your app is running:

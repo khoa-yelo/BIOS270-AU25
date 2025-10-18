@@ -39,7 +39,7 @@ count() {
 # -----------------------------
 # Environment variables
 # -----------------------------
-export CLASS="$SCRATCH/bios270"
+export CLASS="/farmshare/user_data/$USER/bios270"
 export CLASS_REPO="$CLASS/repos/BIOS270-AU25"
 export CLASS_DATA="$CLASS/data"
 export CLASS_ENVS="$CLASS/envs"

@@ -2,7 +2,7 @@
 
 In this section, we’ll learn how to use **conda (micromamba)** and **containers** (Docker, Singularity) to manage your software environment effectively.
 
->*"But it works on my laptop..." - uttered by generations of grad students.*
+>*"But it works on my laptop..." - whispered by generations of grad students.*
 
 ---
 

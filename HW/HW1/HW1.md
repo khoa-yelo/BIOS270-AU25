@@ -6,6 +6,9 @@
 - Practice core Git workflows: clone, branch, commit, push, and pull request.
 - Learn how to use Jira for task management
 
+---
+**Create a [GitHub](https://github.com/) account** (if you don’t have one).
+
 ## Farmshare Setup
 
 We will be working on [**Farmshare**](https://docs.farmshare.stanford.edu/) throughout this course. Follow these steps for logging in and initial setup.
@@ -80,10 +83,9 @@ Complete the exercises at **https://learngitbranching.js.org/**
 
 ## HW Part C - Practice
 
-1. **Create a [GitHub](https://github.com/) account** (if you don’t have one).
-2. **Fork** the course [repository](https://github.com/khoa-yelo/BIOS270-AU25) to your GitHub account.
+1. **Fork** the course [repository](https://github.com/khoa-yelo/BIOS270-AU25) to your GitHub account.
 ![github_fork](./images/github_fork.png)
-3. **Clone** your fork (not the original course repo) to Farmshare via ssh:
+2. **Clone** your fork (not the original course repo) to Farmshare via ssh:
    ```bash
    cd $SCRATCH
    mkdir repos
@@ -91,24 +93,24 @@ Complete the exercises at **https://learngitbranching.js.org/**
    git clone git@github.com:[your-user-name]/BIOS270-AU25.git
    cd BIOS270-AU25
    ```
-4. **Create a new branch** for your changes and **checkout** that branch:
+3. **Create a new branch** for your changes and **checkout** that branch:
 
-5. **Edit the write-up**  
+4. **Edit the write-up**  
    - Open `Writeup0.md`
    - Modify **Name** and **SUNetID** to your name and SUNetID
 
-6. **Complete HW Submission section**  
+5. **Complete HW Submission section**  
    - Complete HW submission by including screenshots and answer some questions (HW Part A, B)
    To copy screenshot images from your laptop to Farmshare, use `scp` on your laptop terminal
    ```bash
    scp <path-to-your-image> <SUNetID>@login.farmshare.stanford.edu:<full-path-to-your-repo-directory-on-farmshare> 
    ```
-7. **Commit your changes**  
+6. **Commit your changes**  
    Since there are two conceptual tasks (editing `Writeup0.md` and `HW Submission`), consider having **two separate commits**:
 
-8. **Push your branch to your forked repo**:
+7. **Push your branch to your forked repo**:
 
-9. **Open a Pull Request (PR)**  
+8. **Open a Pull Request (PR)**  
    - Base: **your fork’s** `main`  
    - Compare: `your-new-branch`  
    - Add a title and short description, then **Create PR**.

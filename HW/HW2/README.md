@@ -5,23 +5,23 @@
 - Learn how to deploy and share a Streamlit app using Streamlit Cloud.
   
 Resource: [streamlit](https://docs.streamlit.io/get-started/fundamentals/main-concepts)
-> Tip: This HW is light enough to be run locally. Run on your laptop instead of Farmshare so that you don't need to worry about port fowarding to use your browser.
+> Tip: This HW is light enough to be run locally. Run on your laptop instead of Farmshare to skip port forwarding for using your browser.
 ---
 
-## Part 1 — TODO Tasks
+## Part 1 - Streamlit features
 
 To run the app locally for testing:
 
 ```bash
 streamlit run app.py
 ```
-You will need to install packages in `requirement.txt`. You should be expert in Environment management by the end of lecture 2, so I'll let you handle it :) 
+You will need to install packages in `requirement.txt`. Apply what you learn in Lecture 2 to set up your environment.
 
-### TODO 1 - Add a Logo or Header Image
+### Add a Logo or Header Image
 At the very top of the Streamlit app, add an image as your app logo
 
 ```python
-# TODO 1: Add a logo or image above the title, replace with your favorite image
+# TODO: Add a logo or image above the title, replace with your favorite image
 st.image(
     "https://github.com/khoa-yelo/BIOS270-AU25/blob/main/Writeups/writeup0/snyderlab.png?raw=true",
     width=150
@@ -31,17 +31,14 @@ Try placing this before `st.title("Pairwise Sequence Aligner")`.
 
 ---
 
-### TODO 2 - Plot a Histogram of Match Values
+### Plot a Histogram of Match Values
 After alignment is computed, visualize how many positions were matches (1) vs mismatches (0).
 
 ```python
-# TODO 2: Plot histogram of match values
+# TODO: Plot histogram of match values, where should you inserted this code?
 fig = px.histogram(vals, nbins=10, title="Distribution of Match Values (Match=1, Mismatch=0)")
 st.plotly_chart(fig, use_container_width=True)
 ```
-
-*Hint: Use the list `vals` that’s already defined for the line plot.*
-
 ---
 
 ## Part 2 - Multiple Choice Questions

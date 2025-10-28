@@ -5,7 +5,7 @@
 - Learn how to deploy and share a Streamlit app using Streamlit Cloud.
   
 Resource: [streamlit](https://docs.streamlit.io/get-started/fundamentals/main-concepts)
-> Tip: This HW is light enough to be run locally. Run on your laptop instead of Farmshare to skip port forwarding for using your browser.
+> Instruction: This HW is light enough to be run locally. Run on your laptop instead of Farmshare to skip port forwarding for using your browser.
 ---
 
 ## Part 1 - Streamlit features
@@ -35,7 +35,7 @@ Try placing this before `st.title("Pairwise Sequence Aligner")`.
 After alignment is computed, visualize how many positions were matches (1) vs mismatches (0).
 
 ```python
-# TODO: Plot histogram of match values, where should you inserted this code?
+# TODO: Plot histogram of match values, where should you insert this code?
 fig = px.histogram(vals, nbins=10, title="Distribution of Match Values (Match=1, Mismatch=0)")
 st.plotly_chart(fig, use_container_width=True)
 ```
@@ -44,7 +44,7 @@ st.plotly_chart(fig, use_container_width=True)
 ## Part 2 - Multiple Choice Questions
 
 ### Q1.  
-In Streamlit, what happens when you define and use:
+In Streamlit, what happens when you define and click the defined button:
 ```python
 align_clicked = st.button("▶️ Align sequences")
 ```
@@ -69,7 +69,7 @@ st.plotly_chart(fig, use_container_width=True)
 ## Part 3 — Share Your Streamlit App Online
 
 ### Step 1. Push your code to GitHub
-Make sure your project files (including `app.py` and `requirements.txt`) are pushed to a **public GitHub repository**.
+Make sure your project files (including `app.py` and `requirements.txt`) are pushed to your GitHub repository.
 
 Example folder structure:
 ```
@@ -92,7 +92,7 @@ HW2_Streamlit/
 ### Step 3. Test and Submit
 Once your app is running:
 - Test that it loads properly and alignment works.  
-- Make sure the histogram and logo appear.  
+- Make sure the histogram and logo you inserted in **Part 1** appear.  
 
 Then, copy and paste your **Streamlit Cloud URL** below  
 

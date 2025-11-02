@@ -183,12 +183,12 @@ Answer the following questions:
 **HW Part B**
 
 - Introduction Sequence — 4/4 complete:  
-![Main Task Screenshot](BIOS270-AU25/HW/HW1/images
+![Main Task Screenshot](images
 /Main.png)
 
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
-![Remote Task Screenshot](BIOS270-AU25/HW/HW1/images
+![Remote Task Screenshot](images
 /Main.png)
 
 **HW Part C**

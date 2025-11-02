@@ -175,7 +175,7 @@ As a project grows and more people get involved, it becomes harder to keep track
 
 **HW Part A**
 Answer the following questions:
-- Fill in the blank: "Git provides a **screenshot/history tracking** of content changes"
+- Fill in the blank: "Git provides a **snapshot / history tracking** of content changes"
 
 - Which git command shows you the historical graphical representation of branching and merging events?
   $ git log -- graph --decorate --abbrev --commit --all --pretty=oneline

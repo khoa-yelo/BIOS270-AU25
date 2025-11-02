@@ -183,13 +183,12 @@ Answer the following questions:
 **HW Part B**
 
 - Introduction Sequence — 4/4 complete:  
-![Main Task Screenshot](images
-/Main.png)
+![Main Task Screenshot](images/Main.png)
+
 
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
-![Remote Task Screenshot](images
-/Main.png)
+![Remote Task Screenshot](images/Remote.png)
 
 **HW Part C**
 

@@ -1,0 +1,25 @@
+name: bioinfo_example
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # === Core languages ===
+  - python=3.11
+  - r-base=4.3
+
+  # === Python packages ===
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - biopython
+
+  # === R packages ===
+  - r-essentials # includes R core tools, tidyverse, IRkernel, etc.
+  - bioconductor-deseq2 # DESeq2 for RNA-seq differential expression
+
+  # === System utils ===
+  - pip

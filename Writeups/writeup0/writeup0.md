@@ -20,11 +20,11 @@ This is the main part of your write-up.
 You can include explanations, examples, and notes 
 
 You can use some text formating, lists, and tables to imporve the write-up readability
-### **Text Formatting**
+#### **Text Formatting**
 
 You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
 
-### **Lists**
+#### **Lists**
 
 **Unordered list:**
 - Apple  
@@ -36,7 +36,7 @@ You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis
 2. Second step  
 3. Third step  
 
-### **Table Example**
+#### **Table Example**
 
 | Tool | Description         | Example Command        |
 |------|---------------------|------------------------|
@@ -46,7 +46,7 @@ You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis
 
 Code snippets and images are highly recommended to document your work.
 
-### **Code Examples**
+#### **Code Examples**
 
 **Inline code example:** Use the `print()` function to display text.  
 
@@ -66,11 +66,11 @@ for i in range(3):
 For longer script, you can say something like, `script1.py` contains functions for reading fasta file. Ideally, all codes you run should be saved in corresponding files. 
 
 
-### **Image Example**
+#### **Image Example**
 
 ![Example placeholder image](./snyderlab.png)
 
-### **Link Example**
+#### **Link Example**
 
 Learn more about Markdown syntax here:  
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
@@ -79,7 +79,4 @@ Learn more about Markdown syntax here:
 
 
 ## Acknowledgement
-
-List anyone or anything that helped you.  
-For example:  
-- Collaborator: Brady Hislop
+Collaborator: Brady Hislop

@@ -1,7 +1,8 @@
 # Setup
 
-This guide helps you set up an efficient computing environment for coursework and research, including command-line shortcuts, environment and data management, workflow tools, and access to cloud/GPU resources for machine learning projects.
+This document helps you set up an efficient computing environment for this course, including command-line shortcuts and tools to manage your environment, data, and workflow.
 
+>*“Yet another Duo push…” - when authentication takes longer than the job itself.*
 ---
 
 ## Resources
@@ -10,13 +11,13 @@ This guide helps you set up an efficient computing environment for coursework an
 
 
 
-> **Note:** Include **screenshots** and **code snippets** in your Write-up to document your work.
+> **Instruction:** Include **screenshots** and **code snippets** in your Write-up to document your work.
 
 ---
 
 ## Set Up Your `~/.bashrc` (or `~/.bash_profile`)
 
-To accelerate your work on the command line, customize your Bash profile with shortcuts and environment variables.  
+Customize your Bash profile with shortcuts and environment variables.  
 Your Bash profile automatically runs every time you log in.
 
 Below is an example setup, feel free to modify or add your favorite shortcuts.
@@ -39,10 +40,7 @@ count() {
 # -----------------------------
 # Environment variables
 # -----------------------------
-export CLASS="$SCRATCH/bios270"
-export CLASS_REPO="$CLASS/repos/BIOS270-AU25"
-export CLASS_DATA="$CLASS/data"
-export CLASS_ENVS="$CLASS/envs"
+export CLASS="/farmshare/home/classes/bios/270"
 
 # -----------------------------
 # Basic shortcuts
@@ -55,8 +53,6 @@ alias ..="cd .."
 # Quick navigation
 # -----------------------------
 alias cdc="cd $CLASS"
-alias cdcd="cd $CLASS_DATA"
-alias cdcr="cd $CLASS_REPO"
 
 # -----------------------------
 # Git and file utilities
@@ -89,12 +85,11 @@ alias gpu='srun --pty -p gpu --gres=gpu:1 --mem=32G --cpus-per-task=4 --time=2:0
 
 ### 1. Install **Micromamba**
 
-Micromamba is a lightweight package manager compatible with Conda.  
-When installing, choose a prefix location on a disk with plenty of storage (not `$HOME`), since this is where packages will be installed.
+When installing, choose a prefix location on a disk with plenty of storage (i.e. usually not `$HOME`), since this is where packages will be installed.
 
 ```bash
 "${SHELL}" <(curl -L https://micro.mamba.pm/install.sh)
-# Prefix location? [~/micromamba] $CLASS_ENVS/micromamba
+# Prefix location? [~/micromamba] $SCRATCH/envs/micromamba
 source ~/.bashrc
 # Test your installation
 micromamba --version
@@ -104,9 +99,9 @@ micromamba --version
 
 ### 2. Install **Docker Desktop**
 
-Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) for your operating system.  We’ll use it to build and push container images in later exercises.
+Download [Docker Desktop](https://www.docker.com/products/docker-desktop/) to your laptop.  We’ll use it to build and push container images in later exercises.
 
-You’ll also need a place to store your container images. We'll practice pushing images to Docker Hub for public images and Stanford Gitlab Container Registry, where you can store your private images   
+You’ll also need a place to store your container images. We'll practice pushing images to `Docker Hub` for public images and Stanford Gitlab Container Registry, where you can store your private images. Complete the following steps:   
 - [**Stanford GitLab**](https://gitlab.stanford.edu/): sign-in and create a new project named `containers`.  
 - [**Docker Hub**](https://hub.docker.com/signup): create an account.
 
@@ -116,8 +111,8 @@ You’ll also need a place to store your container images. We'll practice pushin
 
 Set up [**Google Cloud Platform (GCP)**](https://cloud.google.com/) using your **personal email** (as Stanford requires approval to create new projects with Stanford email).
 
-- New users receive **$300 in free credits**.
-- Otherwise, enter your billing information. We’ll keep all activities within the free tier, or under $10 total for the entire course.(TODO: update if Google Cloud credit approved)
+- New users receive $300 in free credits.
+- You should have also received an email about redeeming a $50 credit coupon. Please use your Stanford email to redeem but apply the coupon to your **personal email account**
 - Create a new project named `BIOS270`
 
 
@@ -140,7 +135,6 @@ You’ll need access to **GPUs** for training your ML models.
 
 ### Option 1: Google Cloud Platform (Recommended)
 - Use [**Vertex AI Workbench**](https://cloud.google.com/vertex-ai/docs/workbench) for Jupyter-based GPU training.  
-- New accounts have **$300 credits**.  
 - Request increased GPU quota under **`metric: compute.googleapis.com/gpus_all_regions`** in `IAM & Admin` -> `Quotas & System limits`.  
 - When approved, create and test a new gpu instance.
 
@@ -148,14 +142,48 @@ You’ll need access to **GPUs** for training your ML models.
 Sign up with your Stanford email, it’s free for students. [Sign up here](https://colab.research.google.com/signup).  
 Save Colab compute units for Project 2.
 
-### Option 3: **Runpod Credits**
-If Colab or GCP are unavailable to you, fill out this [form](https://forms.gle/eQkLCXcMB6v9LpU9A) to request **Runpod credits** and set up a Runpod account using this [link](https://runpod.io?ref=04hpenbb)
-
----
-
-
-For your future GPU usage after this course, Stanford offers 5,000 GPU hours for free on [Marlowe](https://datascience.stanford.edu/marlowe/marlowe-access), talk to your PI to apply! 
+>For your future GPU usage after this course, Stanford offers 5,000 GPU hours for free on [Marlowe](https://datascience.stanford.edu/marlowe/marlowe-access), talk to your PI to apply! 
 
 ### (Optional) **Weights & Biases**
 
 Create a [Weights & Biases account](https://wandb.ai/site/) to track your ML training metrics and experiment logs.
+
+---
+## Warm-up: SLURM exercise
+
+Given a `data.txt` with the content below
+```
+12
+7
+91
+8
+27
+30
+```
+
+Below is a common and useful logic one may use to submit a slurm array job
+
+```bash
+#SBATCH --job-name=warmup
+#SBATCH --output=logs/%x_%A_%a.out
+#SBATCH --error=logs/%x_%A_%a.err
+#SBATCH --array=0-2
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=2G
+#SBATCH --time=00:10:00
+
+i=0
+# loop through each line in data.txt, `value` store line content
+while read -r value; do
+    if (( i % SLURM_ARRAY_TASK_COUNT == SLURM_ARRAY_TASK_ID )); then
+        echo "$i: $value"
+    fi
+    # increment
+    ((i++))
+done < data.txt
+```
+
+Answer the following questions in your `write-up`:
+1. How many slurm job will be submitted?
+2. What is the purpose of the `if` statement?
+3. What is the expected output in each `*.out` file?

@@ -12,11 +12,12 @@ Micromamba is a lightweight, fast reimplementation of conda. You can use it to c
 
 1. Create and activate the environment
 
+Examine the `.yaml` file and make sure you understand the role of each section
 ```bash
 micromamba create -f bioinfo_example.yaml
 micromamba activate bioinfo_example
 ```
-Examine the `.yaml` file and make sure you understand the role of each section
+
 
 2. Run example scripts
 
@@ -27,10 +28,9 @@ python example.py
 Rscript example.R
 ```
 
----
-
 3. Adding New Packages
 
+While working on your project, you realized that it would be convenient to call R functions in your python scripts. Install `rpy2` using the command below
 ```bash
 micromamba install rpy2
 ```
@@ -43,7 +43,7 @@ micromamba env export --from-history > bioinfo_example_latest.yaml
 
 The `--from-history` flag ensures that only explicitly installed packages are saved, keeping the environment file clean and minimal.
 
-Compare the new YAML file (`bioinfo_example_latest.yaml`) with the original one.
+Compare the new YAML file (`bioinfo_example_latest.yaml`) with the original one. What changes do you notice?
 
 Answer the following questions:
 - What micromamba command can you use to list all created environemnts?
@@ -52,7 +52,7 @@ Answer the following questions:
 - What micromamba command can you use to install a package from a specific channel?
 - What micromamba command can you use to remove an environment?
 
-*You’re welcome to use AI tools to help you answer these questions, but make sure to try the commands yourself and record your answers for hands-on practice.*
+
 
 - What are all the `r-base` and `Bioconductor` packages that were installed in the bioinfo_example environment?
 *(Hint: You may want to use one of the commands from your answers to the above questions, and combine it with the `grep` command.)*
@@ -62,7 +62,7 @@ Answer the following questions:
 
 # Container
 
-You will practice writing Docker image build instruction, push it to container registries (Docker Hub & Stanford GitLab), use Singularity to create container (`.sif`) image on Farmshare, mount your `$SCRATCH` directory to container, and run **code-server** or **JupyterLab** over an SSH tunnel.
+You will practice writing Docker image build instruction, push it to container registries (`Docker Hub` & `Stanford GitLab`), use Singularity to create container (`.sif`) image on Farmshare, mount your `$SCRATCH` directory to container, and run **code-server** or **JupyterLab** over an SSH tunnel.
 
 1. Set up Docker Hub and Stanford Gitlab connection 
 
@@ -110,28 +110,25 @@ After finished, you should see a file `bioinfo_example_latest.sif`. That's all y
 ```bash
 singularity run `bioinfo_example_latest.sif` 
 ```
-And test if everything runs well (pyhon, R, rclone, etc...)
+And test if everything runs well (python, R, rclone, etc...)
 
-Create an example `python` file in your `$SCRATCH` that prints "Hello World!" and execute the file with your singularity container. Can you run it? Why do you think this is the case? Do some research to solve the problem. 
+Create an example `python` file in your `$SCRATCH` that prints "Hello World!" and execute the file with your singularity container. Can you run it? Why do you think this is the case? *(Hint: -B flag)*
 
 4. Writing your own `Dockerfile`
 
-Write a custom docker image based on the image you already built (Hint: What base image can you indicate for the `FROM` command)
+Write a custom docker image based on the image you already built *(Hint: What base image can you indicate for the `FROM` command)*
 
 You want to include 2 more tools from the base image
 - `parasail` for pairwise sequence alignment and you want to install this via `pip`
 - `reseek` for protein structure search. The tool is provided as binary file on [github](https://github.com/rcedgar/reseek/releases/download/v2.7/reseek-v2.7-linux-x86)
 
-Build the image and push to Docker Hub and Stanford Gitlab with a new `tag`named `bioinfo_example:v2`
+Build the image and push to `Docker Hub` and `Stanford Gitlab` with a new `tag`named `bioinfo_example:v2`
 
-5. Pull a more comprehensive environment to Farmshare, you will use this container for the rest of the course
+5. Pull a more comprehensive container to Farmshare, you will use this container for the rest of the course
 
 ```
 singularity pull docker://scr.svc.stanford.edu/khoang99/containers/bioinformatics
- 
 ```
-
-You can check the Dockerfile for te above image [here]() #TODO: add link
 
 6. Run code-server and jupyter lab 
 
@@ -150,17 +147,20 @@ On **Farmshare** (remote), start the service inside the container
 
 + code-server (VS Code in the browser):
 ```bash
-singularity run -B /farmshare/users/[SUNetID] bioinfo-basic.sif \
+singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinfo-basic.sif \
   code-server --bind-addr 127.0.0.1:<PORT> --auth none
 ```
 
 + JupyterLab:
 ```bash
-singularity run -B /farmshare/users/[SUNetID] bioinfo-basic.sif \
+singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinfo-basic.sif \
   jupyter lab --ip 127.0.0.1 --port <PORT> \
   --NotebookApp.allow_origin='https://colab.research.google.com' \
   --NotebookApp.port_retries=0 --no-browser
 ```
 
 + Google Colab
-- TODO: add image here
+
+You can use Google Colab IDE by clicking `Connect to a local runtime` and pasting the jupyter notebook URL above
+
+![colab](./colab_localruntime.png)

@@ -54,7 +54,7 @@ Answer the following questions:
 
 
 
-- What are all the `r-base` and `Bioconductor` packages that were installed in the bioinfo_example environment?
+- What are all the `r-base` and `Bioconductor` packages that were installed in the `bioinfo_example` environment?
 *(Hint: You may want to use one of the commands from your answers to the above questions, and combine it with the `grep` command.)*
 
 >Remember to push the updated environment file and example outputs to your GitHub repository. Include your output plots and any observations in your write-up.
@@ -147,13 +147,13 @@ On **Farmshare** (remote), start the service inside the container
 
 + code-server (VS Code in the browser):
 ```bash
-singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinfo-basic.sif \
+singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
   code-server --bind-addr 127.0.0.1:<PORT> --auth none
 ```
 
 + JupyterLab:
 ```bash
-singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinfo-basic.sif \
+singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
   jupyter lab --ip 127.0.0.1 --port <PORT> \
   --NotebookApp.allow_origin='https://colab.research.google.com' \
   --NotebookApp.port_retries=0 --no-browser

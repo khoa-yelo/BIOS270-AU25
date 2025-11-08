@@ -1,10 +1,16 @@
 # Write-up 0: template
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
+**Name:** Leslie Chan  
+**Student ID:** lchan8  
 **Date:** 11/11/2025  
 
 ---
+## HW Part A
+
+Git provides a history of content changes.
+
+git log --graph --decorate --abbrev- commit --all --pretty=oneline
+
 
 ## Overview
 

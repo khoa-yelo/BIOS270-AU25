@@ -176,18 +176,30 @@ As a project grows and more people get involved, it becomes harder to keep track
 **HW Part A**
 Answer the following questions:
 - Fill in the blank: "Git provides a ... of content changes"
+history
 
 - Which git command shows you the historical graphical representation of branching and merging events?
+git log
 
 **HW Part B**
 
 > Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
 
 - Introduction Sequence — 4/4 complete:  
-  _Attach image(s) here_
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.18.38 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.19.36 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.20.32 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.21.09 AM.png)
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
-  _Attach image(s) here_
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.22.09 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.23.25 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.24.14 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.24.58 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.26.13 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.27.31 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.30.04 AM.png)
+![image](/farmshare/user_data/timjing/repos/BIOS270-AU25/HW/HW1/Screenshot 2025-11-09 at 11.32.35 AM.png)
 
 **HW Part C**
 

@@ -186,20 +186,20 @@ git log
 > Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
 
 - Introduction Sequence — 4/4 complete:  
-![image](Screenshot 2025-11-09 at 11.18.38 AM.png)
-![image](Screenshot 2025-11-09 at 11.19.36 AM.png)
-![image](Screenshot 2025-11-09 at 11.20.32 AM.png)
-![image](Screenshot 2025-11-09 at 11.21.09 AM.png)
+![image](images/1.png)
+![image](images/2.png)
+![image](images/3.png)
+![image](images/4.png)
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
-![image](Screenshot 2025-11-09 at 11.22.09 AM.png)
-![image](Screenshot 2025-11-09 at 11.23.25 AM.png)
-![image](Screenshot 2025-11-09 at 11.24.14 AM.png)
-![image](Screenshot 2025-11-09 at 11.24.58 AM.png)
-![image](Screenshot 2025-11-09 at 11.26.13 AM.png)
-![image](Screenshot 2025-11-09 at 11.27.31 AM.png)
-![image](Screenshot 2025-11-09 at 11.30.04 AM.png)
-![image](Screenshot 2025-11-09 at 11.32.35 AM.png)
+![image](images/5.png)
+![image](images/6.png)
+![image](images/7.png)
+![image](images/8.png)
+![image](images/9.png)
+![image](images/10.png)
+![image](images/11.png)
+![image](images/12.png)
 
 **HW Part C**
 

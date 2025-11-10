@@ -1,7 +1,7 @@
 # Write-up 0: template
 
 **Name:** Riley Juenemann  
-**Student ID:** rjuene 
+**Student ID:** rjuene    
 **Date:** 11/09/2025  
 
 ---

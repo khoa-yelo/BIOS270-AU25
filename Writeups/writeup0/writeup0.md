@@ -22,9 +22,7 @@ Answer the following questions:
 Add your completion screenshots here (Introduction Sequence and Push & Pull — Git Remotes!).
 
 * Introduction Sequence — 4/4 complete:
-  ![Introduction Sequence](../screenshot1.png)
+  ![Introduction Sequence](screenshot1.png)
 
 * Push & Pull — Git Remotes! — 8/8 complete:
-  ![Push & Pull](../screenshot2.png)
-
-
+  ![Push & Pull](screenshot2.png) 

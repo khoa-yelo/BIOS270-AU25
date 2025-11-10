@@ -186,12 +186,12 @@ git log --graph --decorate --abbrev-commit --all --pretty=oneline
 
 - Introduction Sequence — 4/4 complete:  
   _Attach image(s) here_
-![TJG - git main](~./repos/TJG git levels main.png)
+![TJG - git main](/repos/TJG git levels main.png)
 
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
   _Attach image(s) here_
-![TJG - git main](~./repos/TJG git levels remote.png)
+![TJG - git remote](/repos/TJG git levels remote.png)
 
 **HW Part C**
 

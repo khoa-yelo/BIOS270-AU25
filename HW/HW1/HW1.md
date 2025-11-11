@@ -188,12 +188,12 @@ git log
 
 - Introduction Sequence — 4/4 complete:  
 
-![Example placeholder image](../Writeups/writeup0/screenshot1)
+![Example placeholder image](../../Writeups/writeup0/screenshot1)
 
 
 - Push & Pull — Git Remotes! — 8/8 complete:  
 
-![Example placeholder image](../Writeups/writeup0/screenshot2.png)
+![Example placeholder image](../../Writeups/writeup0/screenshot2.png)
 
 **HW Part C**
 

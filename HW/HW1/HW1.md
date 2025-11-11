@@ -202,10 +202,10 @@ git log
 **HW Part D (optional)**
 - Screenshot of PR link on Jira task
 
-   _Attach image(s) here_
+![Example placeholder image](../../Writeups/writeup0/screenshot3)
 
 
-testtesttesttesttest
+
 ---
 
 ---

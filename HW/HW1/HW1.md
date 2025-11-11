@@ -199,7 +199,7 @@ git log --graph
 **HW Part D (optional)**
 - Screenshot of PR link on Jira task
 
-   _Attach image(s) here_
+   ![jira pull request linked](./images/jira_ss_pr.png)
 
 
 ---

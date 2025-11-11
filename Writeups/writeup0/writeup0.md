@@ -1,23 +1,27 @@
 # Write-up 0: template
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
+**Name:** Xinyi Chen  
+**Student ID:** chenxy19
 **Date:** 11/11/2025  
 
 ---
 
 ## Overview
 
-This section introduces the purpose of the write-up.  
-For example:  
-> This document is a practice exercise in writing and formatting Markdown files clearly and professionally.
-
 ---
 
 ## Content
 
+1. HWA: Git provides a record of content changes
+git log
+
+2. 
 This is the main part of your write-up.  
-You can include explanations, examples, and notes 
+You can include explanations, examples, and notes
+
+![Example placeholder image](./'Screenshot 2025-11-10 at 9.00.29 PM.png')
+![Example placeholder image](./'Screenshot 2025-11-10 at 9.30.02 PM.png')
+
 
 You can use some text formating, lists, and tables to imporve the write-up readability
 #### **Text Formatting**

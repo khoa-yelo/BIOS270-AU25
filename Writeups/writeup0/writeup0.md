@@ -20,7 +20,7 @@ git log
 This is the main part of your write-up.  
 You can include explanations, examples, and notes
 
-![Example placeholder image](./screenshot1.png)
+![Example placeholder image](./screenshot1)
 
 
 ![Example placeholder image](./screenshot2.png)

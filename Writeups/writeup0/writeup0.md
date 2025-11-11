@@ -1,11 +1,28 @@
 # Write-up 0: template
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
+**Name:** Friederike Held  
+**Student ID:** fheld 
 **Date:** 11/11/2025  
 
 ---
+## HW Submission
+**HW Part A**
+- Question1: Git provides a ... of content changes
+- Answer: Git provides a history of content changes.
 
+- Question: Which git command shows you the historical graphical representation of branching and merging events?
+- Answer: git log --graph
+
+**HW Part B**
+- Introduction Sequence - 4/4 complete:
+ ![Introduction Sequence](./done1_HWB_2025-11-10.png)
+
+- Push&Pull - Git Remote! - 8/8 complete:
+ ![Push & Pull](./done2_HWB_2025-11-10.png)
+
+**HW Part C**
+- The URL of this Markdown file is: https://github.com/held-fh/BIOS270-AU25/blob/main/Writeups/writeup0/writeup0.md
+---
 ## Overview
 
 This section introduces the purpose of the write-up.  
@@ -76,7 +93,6 @@ Learn more about Markdown syntax here:
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
 ---
-
 
 ## Acknowledgement
 Collaborator: Brady Hislop

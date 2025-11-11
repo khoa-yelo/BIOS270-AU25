@@ -156,7 +156,7 @@ As a project grows and more people get involved, it becomes harder to keep track
    ```bash
    git checkout -b BIOS-1-hw1
    ```
-   - Create some changes in this `HW1.md`, for example, change this SUNetID to yours `khoang99`
+   - Create some changes in this `HW1.md`, for example, change this SUNetID to yours `troy430`
    - Commit with task ID in message then push the changes
    
    ```

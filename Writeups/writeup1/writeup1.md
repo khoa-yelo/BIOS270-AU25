@@ -208,19 +208,19 @@ fi
 ```
 
 ## Micromamba setup
-![micromamba](./images/micromamba.png)
+![micromamba](./images/Writeup1_images/micromamba.png)
 
 ## Docker Desktop
-![docker](./images/docker.png)
+![docker](./images/Writeup1_images/docker.png)
 
 ## Google Cloud Platform
-![google_cloud](./images/google_cloud.png)
+![google_cloud](./images/Writeup1_images/google_cloud.png)
 
 ## Nextflow
-![nextflow](./images/nextflow.png)
+![nextflow](./images/Writeup1_images/nextflow.png)
 
 ## Vertex AI GPU Instance
-![gpu_quota](./images/gpu_quota.png)
+![gpu_quota](./images/Writeup1_images/gpu_quota.png)
 
 ## Warm-up: SLURM exercise
 

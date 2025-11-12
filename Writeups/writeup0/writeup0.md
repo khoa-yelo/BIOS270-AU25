@@ -1,6 +1,7 @@
 # Write-up 0: template
+
 **Name:** Ginny Parparcen
-**Student ID:** parparcv 
+**Student ID:** parparcv  
 **Date:** 11/11/2025  
 
 ---

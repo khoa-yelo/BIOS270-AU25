@@ -1,0 +1,16 @@
+Homework 1
+
+Name: Ginny Parparcen
+SUNet ID: parparcv
+
+Part A
+-"Git provides a history of content changes"
+-git log –graph  – decorate –abrev-commit –all –pretty=oneline
+
+Part B
+scp ~/Desktop/ss1 parparcv@login.farmshare.stanford.edu:/farmshare/user_data/parparcv/repos/BIOS270-AU25/HW/HW1/
+scp ~/Desktop/ss2 parparcv@login.farmshare.stanford.edu:/farmshare/user_data/parparcv/repos/BIOS270-AU25/HW/HW1/
+
+
+
+

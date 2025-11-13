@@ -1,4 +1,4 @@
-# Write-up 0: template
+# Write-up 0
 
 **Name:** Yujin Moon  
 **Student ID:** ymoon1  
@@ -6,77 +6,24 @@
 
 ---
 
-## Overview
-
-This section introduces the purpose of the write-up.  
-For example:  
-> This document is a practice exercise in writing and formatting Markdown files clearly and professionally.
-
----
-
 ## Content
 
-This is the main part of your write-up.  
-You can include explanations, examples, and notes 
+For the Warm-up:SLURM exercise:
+1. A single job will be submitted, but 3 array tasks will run.
+2. The if statement assigns each line to one array task, using modulo arithmetic.
+3. The expected output of each *.out file is like below:
+   
+   Task 0 (ID=0) → warmup_<jobID>_0.out
+   0: 12
+   3: 8
 
-You can use some text formating, lists, and tables to imporve the write-up readability
-#### **Text Formatting**
+   Task 1 (ID=1) → warmup_<jobID>_1.out
+   1: 7
+   4: 27
 
-You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
-
-#### **Lists**
-
-**Unordered list:**
-- Apple  
-- Banana  
-- Cherry  
-
-**Ordered list:**
-1. First step  
-2. Second step  
-3. Third step  
-
-#### **Table Example**
-
-| Tool | Description         | Example Command        |
-|------|---------------------|------------------------|
-| `ls` | Lists files         | `ls -la`               |
-| `grep` | Searches text     | `grep "pattern" file.txt` |
-| `wc` | Counts words/lines  | `wc -l filename.txt`   |
-
-Code snippets and images are highly recommended to document your work.
-
-#### **Code Examples**
-
-**Inline code example:** Use the `print()` function to display text.  
-
-**Code block example:**
-
-```bash
-# Example command line code
-echo "Hello, Markdown!"
-```
-
-```python
-# Example Python code
-for i in range(3):
-    print("Iteration:", i)
-```
-
-For longer script, you can say something like, `script1.py` contains functions for reading fasta file. Ideally, all codes you run should be saved in corresponding files. 
+   Task 2 (ID=2) → warmup_<jobID>_2.out
+   2: 91
+   5: 30
 
 
-#### **Image Example**
 
-![Example placeholder image](./snyderlab.png)
-
-#### **Link Example**
-
-Learn more about Markdown syntax here:  
-[Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-
----
-
-
-## Acknowledgement
-Collaborator: Brady Hislop

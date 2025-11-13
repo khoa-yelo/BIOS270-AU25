@@ -86,7 +86,7 @@ You will practice writing Docker image build instruction, push it to container r
 - Build Docker image, this will take about 10 minutes. 
 
 ```bash
-docker build -t . bioinfo_example
+docker build -t bioinfo_example .
 ```
 
 - After image is built, push it to Docker Hub and Stanford Gitlab Container Registry. Before doing so, you need to tag the image name with the path to container registry. It will take a while to push the image, you know the trick, `tmux`!

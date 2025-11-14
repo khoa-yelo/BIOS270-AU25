@@ -7,9 +7,9 @@
 ---
 
 ## Example outputs 
-![Python example](/farmshare/user_data/rjuene/repos/BIOS270-AU25/Environment/scripts/python_example_plot.png)
+![Python example](../../Environment/scripts/python_example_plot.png)
 
-![R example png](/farmshare/user_data/rjuene/repos/BIOS270-AU25/Environment/scripts/r_example_plot.png)
+![R example png](../../Environment/scripts/r_example_plot.png)
 
 ## Updated environment file
 
@@ -47,7 +47,7 @@ What micromamba command can you use to remove a package?
 `micromamba uninstall <package name>`
 
 What micromamba command can you use to install a package from a specific channel?
-`micromamba install -c <channel name (eg conda-forge)> <package name>
+`micromamba install -c <channel name (eg conda-forge)> <package name>`
 
 What micromamba command can you use to remove an environment?
 `micromamba env remove -n <environment name>

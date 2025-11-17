@@ -1,0 +1,12 @@
+# Start from the image already built
+FROM bioinfo_example:latest
+
+USER root
+
+# Install parasail via pip
+RUN pip install --no-cache-dir parasail
+
+# Install reseek via curl because of the URL redirects
+# Make it executable with permissions 
+RUN curl -fsSL -o /usr/local/bin/reseek https://github.com/rcedgar/reseek/releases/download/v2.7/reseek-v2.7-linux-x86 \
+    && chmod +x /usr/local/bin/reseek

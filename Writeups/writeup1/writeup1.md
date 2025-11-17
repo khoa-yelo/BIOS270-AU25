@@ -19,14 +19,21 @@ Here contains the screenshots, code snippets, and observations for documentation
 ---
 **Bash profile configuration:**
 ```bash
-# Added paths and shortcuts for SCRATCH and BIOS 270 repo:
+# Added paths and aliases for quicker navigation:
 export SCRATCH="/farmshare/user_data/troy430"
 export BIOS_REPO="/farmshare/user_data/troy430/repos/BIOS270-AU25"
+export WRITEUP="/farmshare/user_data/troy430/repos/BIOS270-AU25/Writeup"
 alias cdscr="cd $SCRATCH"
 alias cdfork="cd $BIOS_REPO"
-# Added a quick test for GitHub connection
-alias gittest="ssh -T git@github.com"
+alias cdw="cd $WRITEUP"
+# Helper function to start agent and add key
+ghagent() {
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_ed25519_farmshare_troy-zen
+  ssh -T git@github.com
+}
 ```
+
 Installed **micromamba** (location can be seen in command line):
 
 ![micromamba directory and version](./images/micromamba_path_version.png)

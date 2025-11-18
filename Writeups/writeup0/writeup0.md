@@ -14,67 +14,44 @@
 
 ## Content
 
-This is the main part of your write-up.  
-You can include explanations, examples, and notes 
+### HW Part A
+- Git provides a ***history*** of content changes
+- ```bash
+    git log --graph --decorate --abbrev-commit --all --pretty=oneline
+    ```
 
-You can use some text formating, lists, and tables to imporve the write-up readability
-#### **Text Formatting**
+### HW Part B
+Below are the images from HW1.
+#### Introduction sequence
+***Introduction 1***
+![Intro 1 image](../../ImageFolders/HW1_images/Intro_1.png)  
 
-You can make text **bold**, *italic*, or even ***bold and italic*** for emphasis.
+***Branching in Git***
+![Branching in Git](../../ImageFolders/HW1_images/Intro_2.png) 
 
-#### **Lists**
+***Merging in Git***
+![Merging in Git](../../ImageFolders/HW1_images/Intro_3.png)   
 
-**Unordered list:**
-- Apple  
-- Banana  
-- Cherry  
+***Rebase Introduction***
+![Rebase Introduction](../../ImageFolders/HW1_images/Intro_4.png)  
 
-**Ordered list:**
-1. First step  
-2. Second step  
-3. Third step  
-
-#### **Table Example**
-
-| Tool | Description         | Example Command        |
-|------|---------------------|------------------------|
-| `ls` | Lists files         | `ls -la`               |
-| `grep` | Searches text     | `grep "pattern" file.txt` |
-| `wc` | Counts words/lines  | `wc -l filename.txt`   |
-
-Code snippets and images are highly recommended to document your work.
-
-#### **Code Examples**
-
-**Inline code example:** Use the `print()` function to display text.  
-
-**Code block example:**
-
-```bash
-# Example command line code
-echo "Hello, Markdown!"
-```
-
-```python
-# Example Python code
-for i in range(3):
-    print("Iteration:", i)
-```
-
-For longer script, you can say something like, `script1.py` contains functions for reading fasta file. Ideally, all codes you run should be saved in corresponding files. 
+#### Push & Pull - Git Remotes!
+***Remote 1***
+![Remote 1 image](../../ImageFolders/HW1_images/remote_1.png)  
+***Remote branches***
+![Remote branches](../../ImageFolders/HW1_images/remote_2.png)  
+***Git Fetchin***
+![Git Fetchin](../../ImageFolders/HW1_images/remote_3.png)  
+***Git Pullin***
+![Git Pullin](../../ImageFolders/HW1_images/remote_4.png)  
+***Faking Teamwork***
+![Faking Teamwork](../../ImageFolders/HW1_images/remote_5.png)  
+***Git Pushin***
+![Git Pushin](../../ImageFolders/HW1_images/remote_6.png)  
+***Diverged History***
+![Diverged History](../../ImageFolders/HW1_images/remote_7.png)  
+***Locked Main***
+![Locked Main](../../ImageFolders/HW1_images/remote_8.png)  
 
 
-#### **Image Example**
-
-![Example placeholder image](./snyderlab.png)
-
-#### **Link Example**
-
-Learn more about Markdown syntax here:  
-[Markdown Guide](https://www.markdownguide.org/basic-syntax/)
-
----
-
-
-## Acknowledgement
-Collaborator: Brady Hislop
+### HW Part D

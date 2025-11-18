@@ -86,7 +86,7 @@ You will practice writing Docker image build instruction, push it to container r
 - Build Docker image, this will take about 10 minutes. 
 
 ```bash
-docker build -t . bioinfo_example
+docker build -t bioinfo_example .
 ```
 
 - After image is built, push it to Docker Hub and Stanford Gitlab Container Registry. Before doing so, you need to tag the image name with the path to container registry. It will take a while to push the image, you know the trick, `tmux`!
@@ -95,9 +95,15 @@ docker build -t . bioinfo_example
 # Tag and push to Docker Hub
 docker tag bioinfo_example <DockerHub_Username>/bioinfo_example
 docker push <DockerHub_Username>/bioinfo_example
+```
+
+```bash
 # Tag and push to Stanford Gitlab (On another tmux session/window)
+# Connect docker with Stanford Gitlab
+docker login scr.svc.stanford.edu
+# Use your SUNetID as username and set your password at https://code.stanford.edu/-/user_settings/password/edit
 docker tag bioinfo_example scr.svc.stanford.edu/<SUNetID>/containers/bioinfo_example
-docker push <DockerHub_Username>/bioinfo_example
+docker push scr.svc.stanford.edu/<SUNetID>/containers/bioinfo_example
 ```
 
 3. Pull image to Farmshare with Singularity. You can pull from either registry

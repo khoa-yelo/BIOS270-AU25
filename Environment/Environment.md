@@ -60,7 +60,7 @@ Answer the following questions:
 >Remember to push the updated environment file and example outputs to your GitHub repository. Include your output plots and any observations in your write-up.
 
 
-# Container
+## 2. Container
 
 You will practice writing Docker image build instruction, push it to container registries (`Docker Hub` & `Stanford GitLab`), use Singularity to create container (`.sif`) image on Farmshare, mount your `$SCRATCH` directory to container, and run **code-server** or **JupyterLab** over an SSH tunnel.
 
@@ -86,7 +86,7 @@ You will practice writing Docker image build instruction, push it to container r
 - Build Docker image, this will take about 10 minutes. 
 
 ```bash
-docker build -t bioinfo_example .
+docker build --platform linux/amd64 -t bioinfo_example .
 ```
 
 - After image is built, push it to Docker Hub and Stanford Gitlab Container Registry. Before doing so, you need to tag the image name with the path to container registry. It will take a while to push the image, you know the trick, `tmux`!
@@ -114,11 +114,17 @@ singularity pull docker://scr.svc.stanford.edu/<SUNetID>/containers/bioinfo_exam
 After finished, you should see a file `bioinfo_example_latest.sif`. That's all you need for a reproducible environment! Now run 
 
 ```bash
-singularity run `bioinfo_example_latest.sif` 
+singularity run bioinfo_example_latest.sif 
 ```
 And test if everything runs well (python, R, rclone, etc...)
 
-Create an example `python` file in your `$SCRATCH` that prints "Hello World!" and execute the file with your singularity container. Can you run it? Why do you think this is the case? *(Hint: -B flag)*
+Create an example `python` file in your `$SCRATCH` that prints "Hello World!" and execute the file with your singularity container. 
+
+```bash
+singularity run bioinfo_example_latest.sif python print_hello.py  
+```
+
+Can you run it? Why do you think this is the case? *(Hint: -B flag)*
 
 4. Writing your own `Dockerfile`
 

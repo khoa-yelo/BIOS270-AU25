@@ -1,16 +1,14 @@
-# Write-up 0: template
+# Write-up 0: 
 
-**Name:** Khoa Hoang  
-**Student ID:** khoang99  
+
+**Name:** Eliel Akinbami  
+**Student ID:** elielkin  
 **Date:** 11/11/2025  
 
 ---
 
-## Overview
-
-This section introduces the purpose of the write-up.  
-For example:  
-> This document is a practice exercise in writing and formatting Markdown files clearly and professionally.
+## Overview  
+> This document is a compilation of my submission for Homework 1, including images for using git. 
 
 ---
 

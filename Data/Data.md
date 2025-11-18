@@ -12,7 +12,9 @@ Today, we’ll learn how to manage your data effectively with GCP, SQL database,
 
 ### Google Cloud
 
-Follow these steps to authenticate (`project-id` is the id of project `BIOS270` you created in `Setup` lecture )
+Follow these steps to authenticate (`project-id` is the id of project `BIOS270` you created in `Setup.md`).
+
+`gcloud` command is available in `bioinformatics_latest.sif` container
 
 ```
 gcloud auth login
@@ -24,29 +26,29 @@ gcloud auth application-default set-quota-project <project-id>
 
 ### Google Cloud Storage (GCS)
 
-Create a new `Bucket` named `bacteria`
+On GCS, create a new `Bucket` named `bacteria`
 
-Set up GCS remote using `rclone config` -> `New remote`
+On Farmshare, set up GCS remote using `rclone config` -> `New remote`
 
 ### Google Drive
 
-Set up Drive remote using `rclone config` -> `New remote`
+On Farmshare, set up Drive remote using `rclone config` -> `New remote`
 
 ### Google BigQuery
 
-Create a new `Dataset` named `bacteria`
+On BigQuery, create a new `Dataset` named `bacteria`
 
 ---
 
 ## Dataset Overview
 
-`/farmshare/home/classes/bios/270/data/bacteria` contains long-read assemblies (`*.fna`), annotations (`genomic.gff`), predicted proteins sequence (`protein.faa`) of 1958 bacteria isolates.
+`/farmshare/home/classes/bios/270/data/bacteria` contains long-read assemblies (`*.fna`), annotations (`genomic.gff`), predicted protein sequences (`protein.faa`) of 1958 bacteria isolates.
 
-`/farmshare/home/classes/bios/270/data/bacteria_supp` contains metadata file containing information on each assembly (`assembly_data_report.jsonl`) and clustering of all proteins predicted from 1958 bacteria isolates (`clusters_mmseqclust_id03_c08.tsv`)
+`/farmshare/home/classes/bios/270/data/bacteria_supp` contains a metadata file containing information on each assembly (`assembly_data_report.jsonl`) and clustering output of all proteins predicted from 1958 bacteria isolates (`clusters_mmseqclust_id03_c08.tsv`)
 
-`/farmshare/home/classes/bios/270/data/protein_data/` contains protein embeddings (in batch of 10,000) of all predicted proteins in 1958 isolates
+`/farmshare/home/classes/bios/270/data/protein_data/` contains protein embeddings (in batches of 10,000) of all predicted proteins in 1958 isolates
 
-In order to extract insights (and later build machine learning model) from this dataset, we will convert these data into SQL database and HDF5 data format.
+In order to extract insights (and later build machine learning model) from this dataset, we will convert the data into SQL database and HDF5 format.
 
 ---
 
@@ -81,12 +83,12 @@ Use `rclone copy` to copy the output `bacteria.db` to your `bacteria` bucket on 
 
 ### 2. Query the Created Database
 
-Complete the `TODO` section in `query_bacteria_db.py`.
+Complete the `TODO` sections in `query_bacteria_db.py`.
 
-Record the runtime - if it takes too long, you may stop the session early.
+Record the runtime. You may stop the session early if it takes too long and record runtime of the first few iterations.
 
 Then, uncomment `db.index_record_ids()` and note how the runtime changes.  
-What do you observe, and why do you think this happens?
+What did you notice, and why do you think this is the case?
 
 ---
 
@@ -104,7 +106,7 @@ df = pd.read_sql_query(
 )
 ```
 
-Once your dataset has been uploaded, create a query in BigQuery that joins at least **two tables** from the dataset.  
+Once your dataset has been uploaded, create a query on BigQuery that joins at least **two tables** from the dataset.  
 Export the query results as a **CSV file** to **Google Cloud Storage (GCS)**.
 
 ---

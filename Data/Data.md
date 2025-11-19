@@ -35,7 +35,7 @@ gcloud auth application-default set-quota-project <project-id>
 
 ### Google Cloud Storage (GCS)
 
-On GCS, create a new `Bucket` named `bacteria`
+On GCS, create a new `Bucket` named `bacteria-<sunetid>`
 
 On Farmshare, set up GCS remote using `rclone config` -> `New remote`
 (`rclone` is available in `bioinformatics_latest.sif` container)
@@ -53,7 +53,7 @@ On Farmshare, set up Drive remote using `rclone config` -> `New remote`
 
 ### Google BigQuery
 
-On BigQuery, create a new `Dataset` named `bacteria-<sunetid>`
+On BigQuery, create a new `Dataset` named `bacteria`
 
 ---
 
@@ -135,6 +135,11 @@ df = pd.read_sql_query(
     f"SELECT * FROM {table} LIMIT {CHUNK_SIZE} OFFSET {offset}",
     conn
 )
+```
+Run the `upload_bigquery.py` script (using `bioinformatics_latest.sif` container)
+
+```bash
+python upload_bigquery.py --local_database_path <path to the bacteria.db created in Section 1> --project_id <GCP project-id> --dataset_id bacteria
 ```
 
 Once your dataset has been uploaded, create a query on BigQuery that involves at least **two tables** from the dataset.  

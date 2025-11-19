@@ -237,3 +237,8 @@ Answer the following questions:
   r-xts                              0.14.1        r43h2b5f3a1_0        conda-forge
   r-yaml                             2.3.10        r43hdb488b9_0        conda-forge
   r-zoo                              1.8_14        r43h2b5f3a1_0        conda-forge
+
+![Python plot](python_example_plot.png)
+
+![R Plot](Rplots.pdf)
+

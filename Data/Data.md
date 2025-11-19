@@ -110,7 +110,7 @@ After the database has been created, use `rclone copy` to copy the output `bacte
 
 Complete the `TODO` sections in `query_bacteria_db.py`. You may want to examine the `gff2df` function in `insert_gff_table.py` to understand the columns in `gff` table.
 
-Then, run `query_bacteria_db.py`
+Then, run `query_bacteria_db.py` (using `bioinformatics_latest.sif` container)
 
 ```bash
 python query_bacteria_db.py --database_path <path to the bacteria.db created in Section 1>

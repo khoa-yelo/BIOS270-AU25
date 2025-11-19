@@ -1,0 +1,16 @@
+# Base image: previous container
+FROM bioinfo_example:latest
+
+USER root
+
+RUN pip install parasail
+
+RUN apt-get update && apt-get install -y wget && apt-get clean
+
+RUN wget -O /usr/local/bin/reseek https://github.com/rcedgar/reseek/releases/download/v2.7/reseek-v2.7-linux-x86
+
+RUN chmod +x /usr/local/bin/reseek
+
+# Default action when the container starts: open an interactive Bash shell
+CMD ["/bin/bash"]
+

@@ -246,3 +246,5 @@ Answer the following questions:
 
 ![R Plot](Rplots.pdf)
 
+![R Plot](r_example_plot.png)
+

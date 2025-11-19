@@ -36,6 +36,7 @@ gcloud auth application-default set-quota-project <project-id>
 On GCS, create a new `Bucket` named `bacteria`
 
 On Farmshare, set up GCS remote using `rclone config` -> `New remote`
+(`rclone` is available in `bioinformatics_latest.sif` container)
 
 ### Google Drive
 
@@ -93,7 +94,6 @@ while try_num < max_retries:
 ```
 
 After the database has been created, use `rclone copy` to copy the output `bacteria.db` to your `bacteria` bucket on `GCS` and a dedicated folder on `Drive`.
-(`rclone` is available in `bioinformatics_latest.sif` container)
 
 ---
 

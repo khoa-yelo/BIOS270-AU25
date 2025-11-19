@@ -1,4 +1,4 @@
-# Write-up 0: template
+# Write-up 1: template
 
 **Name:** Riley Juenemann       
 **Student ID:** rjuene    
@@ -133,7 +133,7 @@ export SCRATCH=/farmshare/user_data/rjuene
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'micromamba shell init' !!
 export MAMBA_EXE='/home/users/rjuene/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/users/rjuene/$SCRATCH/envs/micromamba';
+export MAMBA_ROOT_PREFIX='/scratch/users/rjuene/envs/micromamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
@@ -142,7 +142,6 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-
 
 # Example custom bash profile
 

@@ -298,7 +298,10 @@ singularity run \
   bioinfo_example_latest.sif \
   python /farmshare/user_data/rjuene/repos/BIOS270-AU25/Writeups/writeup2/hello.py
 ``` 
-## Screenshot of the two containers on GitLab
+## v2
+![GitLab][GitLab.png]
+![test_reseek][test_reseek.png]
+
 
 ## Screenshot of the running code-server and JupyterLab
 

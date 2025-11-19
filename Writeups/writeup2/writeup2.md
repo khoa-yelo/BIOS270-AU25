@@ -299,10 +299,11 @@ singularity run \
   python /farmshare/user_data/rjuene/repos/BIOS270-AU25/Writeups/writeup2/hello.py
 ``` 
 ## v2
-![GitLab](GitLab.png)
-![test_reseek](test_reseek.png)
+![GitLab](images/GitLab.png)
 
+![test_reseek](images/test_reseek.png)
 
 ## Screenshot of the running code-server and JupyterLab
-![code_server](code_server.png)
-![jupyter](jupyter.png)
+![code_server](images/code_server.png)
+
+![jupyter](images/jupyter.png)

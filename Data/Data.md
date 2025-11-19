@@ -17,6 +17,8 @@ This allows `rclone` authentication. For example,
 ssh -L 53682:localhost:53682 -L 23000:localhost:23000 <SUNetID>@login.farmshare.stanford.edu
 ```
 
+Add `source /farmshare/home/classes/bios/270/setup.sh` into your `~/.bashrc` and run `source ~/.bashrc`
+
 ### Google Cloud
 
 Follow these steps to authenticate (`project-id` is the id of project `BIOS270` you created in `Setup.md`).
@@ -38,13 +40,20 @@ On GCS, create a new `Bucket` named `bacteria`
 On Farmshare, set up GCS remote using `rclone config` -> `New remote`
 (`rclone` is available in `bioinformatics_latest.sif` container)
 
+Answer `true` when prompted 
+
+```
+Enter a boolean value (true or false). Press Enter for the default ("false").
+bucket_policy_only>
+```
+
 ### Google Drive
 
 On Farmshare, set up Drive remote using `rclone config` -> `New remote`
 
 ### Google BigQuery
 
-On BigQuery, create a new `Dataset` named `bacteria`
+On BigQuery, create a new `Dataset` named `bacteria-<sunetid>`
 
 ---
 
@@ -93,7 +102,7 @@ while try_num < max_retries:
             raise e
 ```
 
-After the database has been created, use `rclone copy` to copy the output `bacteria.db` to your `bacteria` bucket on `GCS` and a dedicated folder on `Drive`.
+After the database has been created, use `rclone copy` to copy the output `bacteria.db` to your `bacteria-<sunetid>` bucket on `GCS` and a dedicated folder on `Drive`.
 
 ---
 

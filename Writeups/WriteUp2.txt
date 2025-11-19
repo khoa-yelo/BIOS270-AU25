@@ -1,4 +1,8 @@
 Compare the new YAML file (`bioinfo_example_latest.yaml`) with the original one. What changes do you notice?
+- New yaml file is shorter
+- All automatic dependencies are gone
+- Version numbers and build strings are simplified or gone
+
 
 Answer the following questions:
 - What micromamba command can you use to list all created environemnts?

@@ -10,6 +10,13 @@ Today, we’ll learn how to manage your data effectively with GCP, SQL database,
 
 ## Setup
 
+For this exercise, you'll need to forward port `53682` in addition to any usual port you specified for code-server/jupyter lab.
+This allows `rclone` authentication. For example,
+
+```bash
+ssh -L 53682:localhost:53682 -L 23000:localhost:23000 <SUNetID>@login.farmshare.stanford.edu
+```
+
 ### Google Cloud
 
 Follow these steps to authenticate (`project-id` is the id of project `BIOS270` you created in `Setup.md`).

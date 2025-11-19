@@ -287,4 +287,19 @@ Bioconductor packages
   bioconductor-zlibbioc              1.48.0        r43ha9d7317_2         bioconda
 ```
 
+## Containers
+
+`singularity run bioinfo_example_latest.sif python hello.py` does not run the new file to print Hello World! This is because containers are designed to be isolated environments and do not know the paths to files outside of them unless the -B flag is used to mount those paths to the container.
+
+This is the correct command to run the new file:
+```
+singularity run \
+  -B /farmshare/user_data/rjuene/repos/BIOS270-AU25/Writeups/writeup2 \
+  bioinfo_example_latest.sif \
+  python /farmshare/user_data/rjuene/repos/BIOS270-AU25/Writeups/writeup2/hello.py
+``` 
+## Screenshot of the two containers on GitLab
+
+## Screenshot of the running code-server and JupyterLab
+
 

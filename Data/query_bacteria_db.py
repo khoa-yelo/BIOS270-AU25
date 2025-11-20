@@ -15,9 +15,6 @@ class BacteriaDatabase:
         self.db_path = db_path
         self.conn = sqlite3.connect(db_path)
         
-        tables = pd.read_sql("SELECT name FROM sqlite_master WHERE type='table';", self.conn)
-        print(tables)
-
     def get_all_record_ids(self):
         #TODO: write the query to get all unique record_id from the gff table
         query = "SELECT DISTINCT record_id FROM gff;"
@@ -26,7 +23,7 @@ class BacteriaDatabase:
     
     def get_protein_ids_from_record_id(self, record_id):
         #TODO: write function to return list of protein_ids for a given record_id
-        query = f"SELECT protein_id FROM protein_cluster WHERE record_id = '{record_id}';"
+        query = f"SELECT protein_id FROM gff WHERE record_id = '{record_id}';"
         df = self.query(query)
         return df["protein_id"].dropna().tolist()
 
@@ -52,7 +49,7 @@ if __name__ == "__main__":
     db = BacteriaDatabase(args.database_path)
     print("Total number of record ids: ", len(db.get_all_record_ids()))
     all_protein_ids = []
-    # db.index_record_ids()
+    db.index_record_ids()
     tic = time.time()
     for i, record_id in enumerate(db.get_all_record_ids()):
         protein_ids = db.get_protein_ids_from_record_id(record_id)

@@ -7,6 +7,7 @@
 #SBATCH --mem=4G
 #SBATCH --time=04:00:00
 
+echo "RUN=$RUN"
 DATABASE="bacteria.db"
 $RUN python insert_gff_table.py --database_path $DATABASE
 $RUN python insert_protein_cluster_table.py --database_path $DATABASE

@@ -1,5 +1,5 @@
 #-------------------- Params --------------------
-samplesheet: "/farmshare/home/classes/bios/270/data/indexes/samplesheet.csv"
+samplesheet: "/farmshare/home/classes/bios/270/data/samplesheet.csv"
 index: '/farmshare/home/classes/bios/270/data/indexes/ecoli_transcripts_index'
 outdir: '/farmshare/user_data/khoang99/bios270/data/processed_data/SRP628437_nf' # modify to your directory
 run_deseq: true

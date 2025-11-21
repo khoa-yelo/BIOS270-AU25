@@ -40,3 +40,46 @@ Modify your pipeline such that:
 1. If the user provides `index` in `params.yaml`, use `index` directly as input for `SALMON` process, skip `SALMON_INDEX`.  
 2. If `index` is **not provided**, but `transcriptome` is, run `SALMON_INDEX` to build index and used the output index directory as input to `SALMON`.  
 3. If **neither** parameter is provided, exit with an informative error message.
+
+---
+
+## Instruction on running Nextflow Pipeline
+
+1. Modify singularity setup in `rnaseq_nf/configs/nextflow.config`
+
+
+```bash
+singularity {
+	  enabled = true
+	  autoMounts = true
+    runOptions = "-B /farmshare/user_data/khoang99/bios270" # modify this to your $SCRATCH directory
+    cacheDir = '/farmshare/user_data/khoang99/bios270/repos/BIOS270-AU25/Pipeline/rnaseq_nf/envs/containers' # modify this to where you want to store container cache image
+}
+```
+
+2. Modify output directory path in `rnaseq_nf/configs/params.yaml`
+
+```bash
+samplesheet: "/farmshare/home/classes/bios/270/data/samplesheet.csv"
+index: '/farmshare/home/classes/bios/270/data/indexes/ecoli_transcripts_index'
+outdir: '/farmshare/user_data/khoang99/bios270/data/processed_data/SRP628437_nf' # modify to where you want the output to be
+run_deseq: true
+
+```
+
+3. Make sure scripts in `rnaseq_nf/bin` are executable, if not 
+
+```bash
+# cd to ./Pipeline
+chmod +x ./rnaseq_nf/bin/*
+```
+
+4. Run Nextflow
+
+Make sure the `nextflow` binary you downloaded in `Setup.md` was added to $PATH
+
+In a `tmux` session, run 
+```bash
+# cd rnaseq_nf
+nextflow run rnaseq.nf -params-file configs/params.yaml -c configs/nextflow.config -profile slurm -resume
+```

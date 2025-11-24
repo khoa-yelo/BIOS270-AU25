@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/scratch/users/lchan8/repos/BIOS270-AU25/Data/insert_gff_table.py", line 9, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/scratch/users/lchan8/repos/BIOS270-AU25/Data/insert_protein_cluster_table.py", line 8, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/scratch/users/lchan8/repos/BIOS270-AU25/Data/insert_metadata_table.py", line 9, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

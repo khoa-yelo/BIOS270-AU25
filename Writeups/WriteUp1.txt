@@ -1,0 +1,14 @@
+Answer the following questions in your `write-up`:
+1. How many slurm job will be submitted?
+  - 3 jobs.
+3. What is the purpose of the `if` statement?
+  - To ensure each array task processes only the lines assigned to it.
+4. What is the expected output in each `*.out` file?
+Job 0 (*_0.out): 0: 12, 3: 8
+
+
+Job 1 (*_1.out): 1: 7, 4: 27
+
+
+Job 2 (*_2.out): 2: 91, 5: 30
+

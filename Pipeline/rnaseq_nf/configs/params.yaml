@@ -1,5 +1,7 @@
 #-------------------- Params --------------------
-samplesheet: "/farmshare/user_data/khoang99/bios270/repos/BIOS270-AU25/Code/rnaseq_nf/samplesheet.csv"
-index: '/farmshare/user_data/khoang99/bios270/data/processed_data/indexes/ecoli_transcripts_index'
-outdir: '/farmshare/user_data/khoang99/bios270/data/processed_data/SRP628437_nf2'
+samplesheet: "/farmshare/user_data/lchan8/repos/BIOS270-AU25/Pipeline/rnaseq_nf/samplesheet.csv"
+index: '/farmshare/home/classes/bios/270/data/indexes/ecoli_transcripts_index'
+outdir: '/farmshare/user_data/lchan8/repos/BIOS270-AU25/Data/processed_data/SRP628437_nf'
 run_deseq: true
+
+transcriptome: "/farmshare/home/classes/bios/270/data/ecoli_ref/GCF_000401755.1_Escherichia_coli_ATCC_25922_cds_from_genomic.fna"

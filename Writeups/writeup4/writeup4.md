@@ -16,6 +16,28 @@ jobs will only be submitted after all the `salmon` jobs have completed.
 
 ## 2. Nextflow Pipeline
 
+I believe the following would work, but I am having trouble running the original
+`rnaseq.nf` pipeline.
+
+```
+process SALMON_INDEX {
+    tag "salmon_index"
+    
+    input:
+      path transcriptome
+    
+    output:
+      path "salmon_index"
+    
+    publishDir "${params.outdir}/salmon_index_outs", mode: 'copy', overwrite: true
+    
+    script:
+      """
+      salmon index -t ${transcriptome} -i salmon_index
+      """
+}
+```
+
 ```
 // RNA-seq QC → Trim Galore → Salmon + DESeq2 (from CSV samplesheet)
 // Expect a CSV with columns: sample,read1,read2,condition

@@ -1,22 +1,3 @@
-# Write-up 4:
-
-**Name:** Riley Juenemann       
-**Student ID:** rjuene    
-**Date:** 11/20/2025    
-
----
-
-## 1. SLURM Pipeline
-
-Similar to how the `salmon` job submission in `rnaseq_pipeline_array_depend.sh` 
-depends on Trim Galore, we could add another step to the script for `DESeq2` 
-job submission that depends on the `salmon` jobs using the flag 
-`--dependency=afterok:$SALMON_QUANT` in the `sbatch`. This ensures that the `DESeq2` 
-jobs will only be submitted after all the `salmon` jobs have completed.
-
-## 2. Nextflow Pipeline
-
-```
 // RNA-seq QC → Trim Galore → Salmon + DESeq2 (from CSV samplesheet)
 // Expect a CSV with columns: sample,read1,read2,condition
 // No intermediate samples.csv is generated; DESeq2 infers quant.sf paths
@@ -73,6 +54,3 @@ workflow {
 workflow.onComplete {
     log.info "Pipeline finished. Results in: ${params.outdir}"
 }
-```
-
-

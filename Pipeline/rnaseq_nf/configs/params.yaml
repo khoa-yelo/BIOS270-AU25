@@ -1,5 +1,5 @@
 #-------------------- Params --------------------
-samplesheet: "/farmshare/user_data/khoang99/bios270/repos/BIOS270-AU25/Code/rnaseq_nf/samplesheet.csv"
-index: '/farmshare/user_data/khoang99/bios270/data/processed_data/indexes/ecoli_transcripts_index'
-outdir: '/farmshare/user_data/khoang99/bios270/data/processed_data/SRP628437_nf2'
+samplesheet: "/farmshare/home/classes/bios/270/data/samplesheet.csv"
+index: '/farmshare/home/classes/bios/270/data/indexes/ecoli_transcripts_index'
+outdir: '/farmshare/user_data/khoang99/bios270/data/processed_data/SRP628437_nf' # modify to your directory
 run_deseq: true

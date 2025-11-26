@@ -159,13 +159,13 @@ On **Farmshare** (remote), start the service inside the container
 
 + code-server (VS Code in the browser):
 ```bash
-singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
+singularity run -B /farmshare/user_data/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
   code-server --bind-addr 127.0.0.1:<PORT> --auth none
 ```
 
 + JupyterLab:
 ```bash
-singularity run -B /farmshare/users/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
+singularity run -B /farmshare/user_data/[SUNetID],/farmshare/home/classes/bios/270 bioinformatics_latest.sif \
   jupyter lab --ip 127.0.0.1 --port <PORT> \
   --NotebookApp.allow_origin='https://colab.research.google.com' \
   --NotebookApp.port_retries=0 --no-browser

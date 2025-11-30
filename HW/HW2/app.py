@@ -6,6 +6,12 @@ from align import compute_alignment, alignment_stats
 
 # ---------------- Streamlit App ----------------
 st.set_page_config(page_title="Pairwise Sequence Aligner", layout="wide")
+# TODO: Add a logo or image above the title, replace with your favorite image
+st.image(
+    #"https://github.com/chenxy19/BIOS270-AU25/Writeups/writeup0/screenshot2.png",
+    "https://raw.githubusercontent.com/chenxy19/BIOS270-AU25/main/Writeups/writeup0/screenshot2.png",
+    width=150
+)
 st.title("Pairwise Sequence Aligner")
 
 st.markdown(
@@ -88,7 +94,12 @@ if align_clicked:
                     },
                     title="Per-position match profile",
                 )
+                st.plotly_chart(fig, use_container_width=True)	
+
+# TODO: Find an appropriate location in `app.py` to insert this code
+                fig = px.histogram(vals, nbins=10, title="Distribution of Match Values (Match=1, Mismatch=0)")
                 st.plotly_chart(fig, use_container_width=True)
+
             else:
                 st.info("No comparable (non-gap) positions to plot.")
 
@@ -105,6 +116,7 @@ if align_clicked:
         except Exception as e:
             st.error(f"Alignment failed: {e}")
             st.exception(e)
+
 
 st.markdown("---")
 st.markdown("© 2025 BIOS270-AU25 Course")

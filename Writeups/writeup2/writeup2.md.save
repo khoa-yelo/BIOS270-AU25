@@ -5,7 +5,7 @@
 **Date:** 11/13/2025  
 
 ---
-
+#Micromamba
 ## 1. Compare the new YAML file (bioinfo_example_latest.yaml) with the original one. What changes do you notice?
 Simpler, cleaner, new dependencies
 ---
@@ -48,19 +48,6 @@ bioconductor-zlibbioc              1.48.0        r43ha9d7317_2        bioconda
 
 ---
 
-#Containers
-Workflow necessary:
-Local:
-1. docker build --platform linux/amd64 -f myDockerfile -t bioinfo_example:v2 .
-2. docker tag bioinfo_example:v2 scr.svc.stanford.edu/llima23/containers/bioinformatics
-3. docker push scr.svc.stanford.edu/llima23/containers/bioinformatics              
-SSH
-1. login to farmshare
-2. module load apptainer
-3. singularity pull docker://scr.svc.stanford.edu/llima23/containers/bioinfo_xample:v2
-singularity run bioinformatics_latest.sif 
 
-#Ports
-ssh [SUNetID]@login.farmshare.stanford.edu -L <PORT>:localhost:<PORT> (no N)
-singularity run -B /farmshare/user_data/llima23,/farmshare/home/classes/bios/270 bioinformatics_latest.sif   code-server --bind-addr 127.0.0.1:22224 --auth none
-Result:  Session server listening on /home/users/llima23/.local/share/code-server/code-server-ipc.sock
+#Container
+Need to run: singularity run -B /farmshare/user_data/llima23 bioinfo_example_latest.sif python scripts/hello.py

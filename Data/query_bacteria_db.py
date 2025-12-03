@@ -26,7 +26,7 @@ class BacteriaDatabase:
         return df["protein_id"].dropna().tolist()
 
     def index_record_ids(self):
-        query = "CREATE INDEX IF NOT EXISTS record_id_index2 ON gff(record_id)"
+        query = "CREATE INDEX IF NOT EXISTS record_id_index ON gff(record_id)"
         self.conn.execute(query)
 
     def query(self, query):

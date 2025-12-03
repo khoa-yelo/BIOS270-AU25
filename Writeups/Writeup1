@@ -1,0 +1,69 @@
+Compare the new YAML file (bioinfo_example_latest.yaml) with the original one. What changes do you notice?
+
+<Original>
+name: bioinfo_example
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # === Core languages ===
+  - python=3.11
+  - r-base=4.3
+
+  # === Python packages ===
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - biopython
+
+  # === R packages ===
+  - r-essentials # includes R core tools, tidyverse, IRkernel, etc.
+  - bioconductor-deseq2 # DESeq2 for RNA-seq differential expression
+
+  # === System utils ===
+  - pip
+
+<New>
+name: bioinfo_example
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bioconductor-deseq2
+  - biopython
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - python=3.11
+  - r-base=4.3
+  - r-essentials
+  - rpy2
+  - seaborn
+
+prefix: "/home/users/ymoon1/y/envs/bioinfo_example"
+
+
+What micromamba command can you use to list all created environemnts?
+micromamba env list
+
+What micromamba command can you use to list all packages installed in a specific environment?
+micromamba list -n bioinfo_example
+
+What micromamba command can you use to remove a package? (example: rpy2)
+micromamba remove -n bioinfo_example rpy2
+
+What micromamba command can you use to install a package from a specific channel? (example: conda-forge channel)
+micromamba install -n bioinfo_example -c conda-forge rpy2
+
+What micromamba command can you use to remove an environment?
+micromamba env remove -n bioinfo_example
+
+What are all the r-base and Bioconductor packages that were installed in the bioinfo_example environment? 
+micromamba list -n bioinfo_example | grep -E "r-base|bioconductor"
+
+

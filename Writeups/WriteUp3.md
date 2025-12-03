@@ -15,3 +15,13 @@ Examine the upload_bigquery.py script.
 Explain the role of CHUNK_SIZE and why it is necessary:
 - CHUNK_SIZE sets how many rows are uploaded to BigQuery at a time.
   It is necessary since it prevents memory overload and upload failures by splitting large data into smaller, manageable parts.
+
+Explain why the following chunk configuration makes sense
+- This means each chunk stores 1,000 proteins, with all of their associated feature values
+what kind of data access pattern is expected
+- Accessing proteins in small batches (like 1,000 at a time).
+why does this align with biological use cases?
+-Bio data is often processed in groups of proteins, not all at once, making batch reading faster and memory-efficient.
+
+
+

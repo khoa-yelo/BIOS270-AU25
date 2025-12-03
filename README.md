@@ -47,12 +47,12 @@ Prerequisite
 | 3    | Data| [SQL](https://www.datacamp.com/cheat-sheet/sql-basics-cheat-sheet), [HDF5](https://support.hdfgroup.org/documentation/hdf5/latest/_intro_h_d_f5.html), [numpy](https://numpy.org/doc/stable/user/absolute_beginners.html), [pandas](https://pandas.pydata.org/docs/user_guide/10min.html)|
 | 4    | Pipeline| [Bioinformatics Pipeline Review](https://www.nature.com/articles/s41592-021-01254-9) |
 | 5    | Project 1| [Genome Annotation: Bakta](https://pubmed.ncbi.nlm.nih.gov/34739369/)
-| 6    | Project 2|[Deep Learning Review](https://www.nature.com/articles/s41580-021-00407-0) |
+| 6    | Project 2|[Machine Learning Review](https://www.nature.com/articles/s41580-021-00407-0) |
 
 ## 📚 Resources
 
 
 - [Learn Git](https://learngitbranching.js.org/)
 - [Learn Nextflow](https://training.nextflow.io/latest/)
-
 - [ESM paper](https://www.science.org/doi/10.1126/science.ade2574)
+

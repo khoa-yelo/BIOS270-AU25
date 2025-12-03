@@ -1,0 +1,17 @@
+How many tables will be created in the database?
+- 3 Tables: GFF, Protein Cluster, Metadata
+
+In the insert_gff_table.py script you submitted, explain the logic of using try and except. Why is this necessary?
+- This was neccessary To catch “database is locked” errors caused by multiple Slurm tasks writing to SQLite at the same time. Ie It retries the write operation instead of failing
+
+Record the runtime - if it takes too long, you may stop the session early.
+- Stopped the session early
+
+Then, uncomment db.index_record_ids() and note how the runtime changes.
+What do you observe, and why do you think this happens?
+- The runtime was a lot quicker. This is because SQLite uses the B-tree index to perform logarithmic-time seeks rather than linear scans
+
+Examine the upload_bigquery.py script.
+Explain the role of CHUNK_SIZE and why it is necessary:
+- CHUNK_SIZE sets how many rows are uploaded to BigQuery at a time.
+  It is necessary since it prevents memory overload and upload failures by splitting large data into smaller, manageable parts.

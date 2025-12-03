@@ -45,7 +45,7 @@ Describe the dataset you will work with and how you plan to manage it.
   - How will you share it with collaborators if needed?
 
 
-## 3. Environment
+### 3. Environment
 
 Document how your computational environment will be set up.
 
@@ -62,7 +62,7 @@ Document how your computational environment will be set up.
     - Containerization  
 
 
-## 4. Pipeline
+### 4. Pipeline
 
 Describe the sequence of steps your analysis will follow.
 
@@ -73,7 +73,7 @@ Describe the sequence of steps your analysis will follow.
   How will you ensure your pipeline runs efficiently on your dataset size, format, number of samples?
 
 
-## 5. Machine Learning Model
+### 5. Machine Learning
 
 Brainstorm an ML task that can be performed on your data
 

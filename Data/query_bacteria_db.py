@@ -16,16 +16,12 @@ class BacteriaDatabase:
         self.conn = sqlite3.connect(db_path)
 
     def get_all_record_ids(self):
-        #TODO: write the query to get all unique record_id from the gff table
-        # remember to drop nan
-        query = #TODO
+        query = "SELECT DISTINCT record_id FROM gff"
         df = self.query(query)
         return df["record_id"].dropna().tolist()
     
     def get_protein_ids_from_record_id(self, record_id):
-        #TODO: write function to return list of protein_ids for a given record_id
-        # remember to drop nan
-        query = #TODO
+        query = f"SELECT protein_id FROM gff WHERE record_id = 'GCF_00012345.gff'"
         df = self.query(query)
         return df["protein_id"].dropna().tolist()
 

@@ -1,0 +1,18 @@
+name: bioinfo_example
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bioconductor-deseq2
+  - biopython
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - python=3.11
+  - r-base=4.3
+  - r-essentials
+  - rpy2
+  - seaborn
+
+prefix: "/home/users/llima23/micromamba/envs/bioinfo_example"

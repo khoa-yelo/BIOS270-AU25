@@ -1,0 +1,51 @@
+import argparse
+import sqlite3
+import h5py
+import numpy as np
+import pandas as pd
+
+EMBED_DIM = 164
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--database_path", default="bacteria.db")
+    parser.add_argument("--embeddings_path", default="protein_embeddings.h5")
+    parser.add_argument("--record_id", required=True)
+    parser.add_argument("--metric", choices=["mean", "mean_mid"], required=True)
+    parser.add_argument("--output_path", default="protein_embeddings.npy")
+    return parser.parse_args()
+
+def get_protein_ids(conn, record_id):
+    # same pattern as your fixed get_protein_ids_from_record_id
+    query = "SELECT protein_id FROM gff WHERE record_id = ?"
+    df = pd.read_sql(query, conn, params=(record_id,))
+    return df["protein_id"].dropna().tolist()
+
+def get_embeddings_matrix(h5_path, protein_ids, metric):
+    mat = []
+    with h5py.File(h5_path, "r") as h5:
+        grp = h5[metric]          # e.g. metric is "mean" or "mean_mid"
+        for pid in protein_ids:
+            if pid not in grp:
+                # skip or raise, depending on what you want
+                continue
+            vec = grp[pid][...]   # assume dataset shape (164,)
+            if vec.shape[-1] != EMBED_DIM:
+                raise ValueError(f"Unexpected embedding dim for {pid}: {vec.shape}")
+            mat.append(vec)
+    if len(mat) == 0:
+        raise ValueError("No embeddings found for these protein IDs")
+    return np.stack(mat, axis=0)  # shape (N, 164)
+
+def main():
+    args = parse_args()
+    conn = sqlite3.connect(args.database_path)
+    protein_ids = get_protein_ids(conn, args.record_id)
+    conn.close()
+
+    emb_mat = get_embeddings_matrix(args.embeddings_path, protein_ids, args.metric)
+    np.save(args.output_path, emb_mat)  # writes an .npy file
+    print(f"Saved {emb_mat.shape} to {args.output_path}")
+
+if __name__ == "__main__":
+    main()

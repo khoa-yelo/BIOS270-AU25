@@ -1,0 +1,18 @@
+# Write-up 3: Data
+
+**Name:** Louise Lima  
+**Student ID:** llima23  
+**Date:** 12/01/2025  
+
+---
+
+##Workflow
+1. ssh -L 53682:localhost:53682 -L 23000:localhost:23000 <SUNetID>@login.farmshare.stanford.edu
+2. module load apptainer
+3. singularity run -B /farmshare/user_data/$USER,/farmshare/home/classes/bios/270 /farmshare/home/classes/bios/270/envs/bioinformatics_latest.sif
+4. gcloud project id: bios270-478122
+
+#Database
+1. create_bacteria_db.sh would create 3 tables, 1 per .py run file
+2. because if the database is locked it lets the user know that the table was not retrieved
+

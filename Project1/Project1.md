@@ -71,7 +71,7 @@ Container:
 
 Example command:
 
-    bakta --db /farmshare/home/classes/bios/270/data/archive/bakta_db/db --output ecoli_bakta_out/ ecoli/assembly.fasta --force
+    bakta --db /farmshare/home/classes/bios/270/data/archive/bakta_db/db --output ecoli_bakta_out/ ecoli_flye_out/assembly.fasta --force
 
 The file you care about is the predicted protein FASTA (`.faa`), e.g.:
 

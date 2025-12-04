@@ -58,9 +58,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 A working ML pipeline that predicts surgical complications and shows that combining text and structured data improves accuracy over using either alone.
 This could help build future AI tools for clinical decision support in orthopedic surgery.
 
----
-
-Would you like me to make this a nicely formatted `.md` file (with headers, spacing, and bullet alignment ready to copy-paste into GitHub)?
 
 
 

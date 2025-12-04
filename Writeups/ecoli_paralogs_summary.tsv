@@ -1,0 +1,151 @@
+protein_id	protein_name	copy_number
+GDKOHJ_06330	GDKOHJ_06330 YagB/YeeU/YfjZ family protein	2
+GDKOHJ_07590	GDKOHJ_07590 Antitoxin of the YeeV-YeeU toxin-antitoxin system; CP4-44 prophage	2
+GDKOHJ_06340	GDKOHJ_06340 Uncharacterized protein YeeT	2
+GDKOHJ_07580	GDKOHJ_07580 CP4-44 prophage	2
+GDKOHJ_06345	GDKOHJ_06345 DNA repair protein RadC, contains a helix-hairpin-helix DNA-binding motif	2
+GDKOHJ_07575	GDKOHJ_07575 DNA repair protein RadC, contains a helix-hairpin-helix DNA-binding motif	2
+GDKOHJ_06355	GDKOHJ_06355 DUF945 domain-containing protein	2
+GDKOHJ_07565	GDKOHJ_07565 Aec71	2
+GDKOHJ_23560	GDKOHJ_23560 Prophage protein	3
+GDKOHJ_24755	GDKOHJ_24755 Prophage protein	3
+GDKOHJ_25520	GDKOHJ_25520 Prophage protein	3
+GDKOHJ_23570	GDKOHJ_23570 Opacity protein LomR and related surface antigens	3
+GDKOHJ_24740	GDKOHJ_24740 Opacity protein LomR and related surface antigens	3
+GDKOHJ_25530	GDKOHJ_25530 Opacity protein LomR and related surface antigens	3
+GDKOHJ_23575	GDKOHJ_23575 Host specificity protein J	3
+GDKOHJ_24735	GDKOHJ_24735 Host specificity protein J	3
+GDKOHJ_25535	GDKOHJ_25535 Host specificity protein J	3
+GDKOHJ_23580	GDKOHJ_23580 Phage-related protein, tail assembly protein I	3
+GDKOHJ_24730	GDKOHJ_24730 Phage-related protein, tail assembly protein I	3
+GDKOHJ_25540	GDKOHJ_25540 Phage-related protein, tail assembly protein I	3
+GDKOHJ_23585	GDKOHJ_23585 Proteasome lid subunit RPN8/RPN11, contains Jab1/MPN domain metalloenzyme (JAMM) motif	3
+GDKOHJ_24725	GDKOHJ_24725 Proteasome lid subunit RPN8/RPN11, contains Jab1/MPN domain metalloenzyme (JAMM) motif	3
+GDKOHJ_25545	GDKOHJ_25545 Proteasome lid subunit RPN8/RPN11, contains Jab1/MPN domain metalloenzyme (JAMM) motif	3
+GDKOHJ_23590	GDKOHJ_23590 phage minor tail protein L	3
+GDKOHJ_24720	GDKOHJ_24720 phage minor tail protein L	3
+GDKOHJ_25550	GDKOHJ_25550 phage minor tail protein L	3
+GDKOHJ_23610	GDKOHJ_23610 Anti-adapter protein IraM	2
+GDKOHJ_24575	GDKOHJ_24575 Anti-adapter protein IraM	2
+GDKOHJ_23615	GDKOHJ_23615 Phage protein	2
+GDKOHJ_24605	GDKOHJ_24605 Phage protein	2
+GDKOHJ_23620	GDKOHJ_23620 SAR-endolysin	2
+GDKOHJ_24610	GDKOHJ_24610 SAR-endolysin	2
+GDKOHJ_23625	GDKOHJ_23625 Transmembrane protein	2
+GDKOHJ_24615	GDKOHJ_24615 Transmembrane protein	2
+GDKOHJ_23630	GDKOHJ_23630 hypothetical protein	2
+GDKOHJ_24620	GDKOHJ_24620 hypothetical protein	2
+GDKOHJ_23730	GDKOHJ_23730 Replication protein	2
+GDKOHJ_23735	GDKOHJ_23735 protein rep	2
+GDKOHJ_02760	GDKOHJ_02760 Methyltransferase type 12 domain-containing protein	2
+GDKOHJ_25510	GDKOHJ_25510 Methyltransferase type 12 domain-containing protein	2
+GDKOHJ_03795	GDKOHJ_03795 IS3 family IS2 transposase ORF A	6
+GDKOHJ_06540	GDKOHJ_06540 IS3 family IS2 transposase ORF A	6
+GDKOHJ_07510	GDKOHJ_07510 Transposase	6
+GDKOHJ_14740	GDKOHJ_14740 IS3 family IS2 transposase ORF A	6
+GDKOHJ_20075	GDKOHJ_20075 IS3 family IS2 transposase ORF A	6
+GDKOHJ_24235	GDKOHJ_24235 IS3 family IS2 transposase ORF A	6
+GDKOHJ_03800	GDKOHJ_03800 IS3 family IS2 transposase ORF B	4
+GDKOHJ_06545	GDKOHJ_06545 IS3 family IS2 transposase ORF B	4
+GDKOHJ_14735	GDKOHJ_14735 IS3 family IS2 transposase ORF B	4
+GDKOHJ_20070	GDKOHJ_20070 IS3 family IS2 transposase ORF B	4
+GDKOHJ_04435	GDKOHJ_04435 Type VI secretion system PAAR protein	2
+GDKOHJ_22800	GDKOHJ_22800 PAAR repeat-containing protein	2
+GDKOHJ_08595	GDKOHJ_08595 elongation factor Tu	2
+GDKOHJ_12535	GDKOHJ_12535 translation elongation factor EF-Tu 1	2
+GDKOHJ_08720	GDKOHJ_08720 D-mannonate dehydratase ManD	2
+GDKOHJ_22365	GDKOHJ_22365 starvation-sensing protein RspA	2
+GDKOHJ_02670	GDKOHJ_02670 Hok/gef family protein	2
+GDKOHJ_02660	GDKOHJ_02660 type I toxin-antitoxin system toxin HokE	2
+GDKOHJ_06470	GDKOHJ_06470 IS3 family ISSd1 transposase ORF B	2
+GDKOHJ_14615	GDKOHJ_14615 IS3 family ISSd1 transposase	2
+GDKOHJ_06485	GDKOHJ_06485 IS3 family transposase	3
+GDKOHJ_25410	GDKOHJ_25410 IS3 family transposase	3
+GDKOHJ_06460	GDKOHJ_06460 Putative transposase InsO for insertion sequence element IS911B	3
+GDKOHJ_06515	GDKOHJ_06515 IS1 family IS1SD transposase ORF B	8
+GDKOHJ_06405	GDKOHJ_06405 IS1 family transposase	8
+GDKOHJ_14810	GDKOHJ_14810 IS1 family transposase	8
+GDKOHJ_14820	GDKOHJ_14820 IS1 family transposase	8
+GDKOHJ_23910	GDKOHJ_23910 IS1 family transposase	8
+GDKOHJ_24025	GDKOHJ_24025 IS1 family transposase	8
+GDKOHJ_24180	GDKOHJ_24180 IS1 family IS1SD transposase ORF B	8
+GDKOHJ_24195	GDKOHJ_24195 IS1 family IS1SD transposase ORF B	8
+GDKOHJ_06520	GDKOHJ_06520 IS1 family IS1A transposase ORF A	7
+GDKOHJ_14805	GDKOHJ_14805 IS1 family IS1A transposase ORF A	7
+GDKOHJ_14825	GDKOHJ_14825 IS1 family IS1A transposase ORF A	7
+GDKOHJ_23915	GDKOHJ_23915 IS1 family IS1B transposase ORF A	7
+GDKOHJ_24030	GDKOHJ_24030 IS1 family IS1A transposase ORF A	7
+GDKOHJ_24185	GDKOHJ_24185 IS1 family IS1A transposase ORF A	7
+GDKOHJ_24190	GDKOHJ_24190 IS1 family IS1A transposase ORF A	7
+GDKOHJ_11585	GDKOHJ_11585 glutamate decarboxylase	2
+GDKOHJ_22625	GDKOHJ_22625 glutamate decarboxylase	2
+GDKOHJ_24145	GDKOHJ_24145 AbrB/MazE/SpoVT family DNA-binding domain-containing protein	2
+GDKOHJ_24160	GDKOHJ_24160 VagC	2
+GDKOHJ_24150	GDKOHJ_24150 tRNA(fMet)-specific endonuclease VapC	2
+GDKOHJ_24165	GDKOHJ_24165 Ribonuclease/mRNA interferase VapC, contains PIN domain	2
+GDKOHJ_24370	GDKOHJ_24370 DNA polymerase III, epsilon subunit or related 3'-5' exonuclease	3
+GDKOHJ_00005	GDKOHJ_00005 3'-5' exonuclease	3
+GDKOHJ_24760	GDKOHJ_24760 3'-5' exonuclease	3
+GDKOHJ_24400	GDKOHJ_24400 Uncharacterized protein YdfB	2
+GDKOHJ_25560	GDKOHJ_25560 Uncharacterized protein YdfB	2
+GDKOHJ_24515	GDKOHJ_24515 type I toxin-antitoxin system toxin HokD	2
+GDKOHJ_25605	GDKOHJ_25605 type I toxin-antitoxin system toxin HokD	2
+GDKOHJ_01070	GDKOHJ_01070 DMSO/selenate family reductase complex B subunit	2
+GDKOHJ_22325	GDKOHJ_22325 DMSO/selenate family reductase complex B subunit	2
+GDKOHJ_05100	GDKOHJ_05100 Bacteriocin immunity protein	2
+GDKOHJ_05110	GDKOHJ_05110 Bacteriocin immunity protein	2
+GDKOHJ_25310	GDKOHJ_25310 Ybl63	2
+GDKOHJ_25515	GDKOHJ_25515 Ybl63	2
+GDKOHJ_25415	GDKOHJ_25415 IS30 family IS30 transposase	2
+GDKOHJ_14680	GDKOHJ_14680 Transposase and inactivated derivatives, IS30 family	2
+GDKOHJ_25420	GDKOHJ_25420 Putative transposase InsN for insertion sequence element IS911A	3
+GDKOHJ_06490	GDKOHJ_06490 IS3 family transposase ORF A	3
+GDKOHJ_07315	GDKOHJ_07315 IS3 family transposase ORF A	3
+GDKOHJ_25445	GDKOHJ_25445 NADP-dependent isocitrate dehydrogenase	2
+GDKOHJ_25285	GDKOHJ_25285 NADP-dependent isocitrate dehydrogenase	2
+GDKOHJ_25525	GDKOHJ_25525 Prophage side tail fiber protein	4
+GDKOHJ_23565	GDKOHJ_23565 Prophage side tail fiber protein	4
+GDKOHJ_24745	GDKOHJ_24745 prophage tail fiber N-terminal domain-containing protein	4
+GDKOHJ_24750	GDKOHJ_24750 Tail fiber domain protein	4
+GDKOHJ_25555	GDKOHJ_25555 Prophage protein	2
+GDKOHJ_24395	GDKOHJ_24395 Prophage protein	2
+GDKOHJ_25565	GDKOHJ_25565 Prophage protein	2
+GDKOHJ_24405	GDKOHJ_24405 DUF1391 domain-containing protein	2
+GDKOHJ_25580	GDKOHJ_25580 Bacterial toxin YdaT domain-containing protein	2
+GDKOHJ_24420	GDKOHJ_24420 Bacterial toxin YdaT domain-containing protein	2
+GDKOHJ_07280	GDKOHJ_07280 Integrase/recombinase, includes phage integrase	2
+GDKOHJ_14835	GDKOHJ_14835 Integrase/recombinase, includes phage integrase	2
+GDKOHJ_07285	GDKOHJ_07285 ShiA-like protein	2
+GDKOHJ_14830	GDKOHJ_14830 Tetratricopeptide repeat protein	2
+GDKOHJ_13560	GDKOHJ_13560 InsB	2
+GDKOHJ_23885	GDKOHJ_23885 InsB	2
+GDKOHJ_16395	GDKOHJ_16395 IS200/IS605-like element IS200C family transposase	3
+GDKOHJ_21180	GDKOHJ_21180 IS200/IS605-like element IS200C family transposase	3
+GDKOHJ_22425	GDKOHJ_22425 IS200/IS605-like element IS200C family transposase	3
+GDKOHJ_07570	GDKOHJ_07570 Antirestriction protein	2
+GDKOHJ_06350	GDKOHJ_06350 Antirestriction protein	2
+GDKOHJ_07670	GDKOHJ_07670 class I fumarate hydratase	2
+GDKOHJ_22085	GDKOHJ_22085 class I fumarate hydratase	2
+GDKOHJ_20345	GDKOHJ_20345 Outer membrane porin OmpC/OmpF/PhoE	2
+GDKOHJ_25335	GDKOHJ_25335 Outer membrane porin OmpC/OmpF/PhoE	2
+GDKOHJ_20700	GDKOHJ_20700 IS6 family IS15DIV transposase	5
+GDKOHJ_20720	GDKOHJ_20720 IS6 family IS15DIV transposase	5
+GDKOHJ_23890	GDKOHJ_23890 IS6 family IS15DIV transposase	5
+GDKOHJ_23945	GDKOHJ_23945 IS6 family IS15DIV transposase	5
+GDKOHJ_23975	GDKOHJ_23975 IS6 family IS15DIV transposase	5
+GDKOHJ_15635	GDKOHJ_15635 Type VI secretion system tip protein VgrG	2
+GDKOHJ_15650	GDKOHJ_15650 Type VI secretion system tip protein VgrG	2
+GDKOHJ_14670	GDKOHJ_14670 IS3 family IS629 transposase ORF B	5
+GDKOHJ_14775	GDKOHJ_14775 IS3 family transposase	5
+GDKOHJ_23805	GDKOHJ_23805 HTH-like domain-containing protein	5
+GDKOHJ_24295	GDKOHJ_24295 HTH-like domain-containing protein	5
+GDKOHJ_24285	GDKOHJ_24285 Integrase catalytic domain-containing protein	5
+GDKOHJ_14675	GDKOHJ_14675 IS3 family IS3411 transposase ORF A	4
+GDKOHJ_14770	GDKOHJ_14770 IS3 family IS1203 transposase ORF A	4
+GDKOHJ_23800	GDKOHJ_23800 IS3 family IS629 transposase ORF A	4
+GDKOHJ_24300	GDKOHJ_24300 IS3 family IS1203 transposase ORF A	4
+GDKOHJ_14685	GDKOHJ_14685 Transposase	3
+GDKOHJ_06465	GDKOHJ_06465 IS3 family ISSfl10 transposase ORF A	3
+GDKOHJ_14620	GDKOHJ_14620 IS3 family ISSd1 transposase ORF A	3
+GDKOHJ_19385	GDKOHJ_19385 colanic acid biosynthesis phosphomannomutase CpsG	2
+GDKOHJ_19485	GDKOHJ_19485 colanic acid biosynthesis phosphomannomutase CpsG	2

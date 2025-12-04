@@ -1,6 +1,6 @@
 ### ScreenShots!
-(HW1.1.png)
-(HW1.png)
+![HW](HW1.1.png)
+![HW1](HW1.png)
 
 # HW1: Farmshare Login + Learning Git + Jira
 

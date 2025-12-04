@@ -11,7 +11,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 1. Use structured data (e.g., age, BMI, labs) to train a simple classifier.
 2. Add text features from operative notes using BioClinicalBERT to improve predictions.
 
----
 
 ### **2. Data**
 
@@ -27,7 +26,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 
 **Storage:** Data stored on Stanford Farmshare (`~/project2/data`) with secure backup.
 
----
 
 ### **3. Environment**
 
@@ -36,7 +34,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 * **Libraries:** `pandas`, `numpy`, `scikit-learn`, `xgboost`, `transformers`, `torch`.
 * **Reproducibility:** Code under GitHub with `requirements.txt` for environment setup.
 
----
 
 ### **4. Pipeline**
 
@@ -46,7 +43,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 4. Fine-tune BioClinicalBERT and combine outputs.
 5. Evaluate and plot results (ROC curve, confusion matrix).
 
----
 
 ### **5. Machine Learning**
 
@@ -56,7 +52,6 @@ Complications after surgery are costly and can extend recovery. Doctors currentl
 * **Evaluation:** AUROC, F1, precision, recall.
 * **Generalization:** 5-fold cross-validation to prevent data leakage.
 
----
 
 ### **Expected Outcome**
 
@@ -66,5 +61,6 @@ This could help build future AI tools for clinical decision support in orthopedi
 ---
 
 Would you like me to make this a nicely formatted `.md` file (with headers, spacing, and bullet alignment ready to copy-paste into GitHub)?
+
 
 

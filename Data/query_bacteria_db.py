@@ -17,13 +17,13 @@ class BacteriaDatabase:
 
     def get_all_record_ids(self):
         #TODO: write the query to get all unique record_id from the gff table
-        query = #TODO
+        query = "SELECT DISTINCT record_id FROM gff"
         df = self.query(query)
         return df["record_id"].dropna().tolist()
     
     def get_protein_ids_from_record_id(self, record_id):
         #TODO: write function to return list of protein_ids for a given record_id
-        query = #TODO
+        query = "SELECT protein_id FROM gff WHERE record_id = ? AND protein_id IS NOT NULL"
         df = self.query(query)
         return df["protein_id"].dropna().tolist()
 

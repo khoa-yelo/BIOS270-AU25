@@ -23,7 +23,7 @@ class BacteriaDatabase:
     
     def get_protein_ids_from_record_id(self, record_id):
         #TODO: write function to return list of protein_ids for a given record_id
-        query = "SELECT protein_id FROM gff WHERE record_id = ? AND protein_id IS NOT NULL"
+        query = "SELECT protein_id FROM gff WHERE record_id = '{record_id}' AND protein_id IS NOT NULL"
         df = self.query(query)
         return df["protein_id"].dropna().tolist()
 

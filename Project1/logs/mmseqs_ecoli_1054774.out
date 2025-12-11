@@ -1,0 +1,527 @@
+easy-cluster /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out/assembly.faa /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_out/ecoli_prot90 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp --min-seq-id 0.9 -c 0.8 --cov-mode 1 -s 7 --threads 32 
+
+MMseqs Version:                     	89f75fec7fdbb0f3be99801a7b2b75e8f2895c5f
+Substitution matrix                 	aa:blosum62.out,nucl:nucleotide.out
+Seed substitution matrix            	aa:VTML80.out,nucl:nucleotide.out
+Sensitivity                         	7
+k-mer length                        	0
+Target search mode                  	0
+k-score                             	seq:2147483647,prof:2147483647
+Alphabet size                       	aa:21,nucl:5
+Max sequence length                 	65535
+Max results per query               	20
+Split database                      	0
+Split mode                          	2
+Split memory limit                  	0
+Coverage threshold                  	0.8
+Coverage mode                       	1
+Compositional bias                  	1
+Compositional bias scale            	1
+Diagonal scoring                    	true
+Exact k-mer matching                	0
+Mask residues                       	1
+Mask residues probability           	0.9
+Mask lower case residues            	0
+Mask lower letter repeating N times 	0
+Minimum diagonal score              	15
+Selected taxa                       	
+Include identical seq. id.          	false
+Spaced k-mers                       	1
+Preload mode                        	0
+Pseudo count a                      	substitution:1.100,context:1.400
+Pseudo count b                      	substitution:4.100,context:5.800
+Spaced k-mer pattern                	
+Local temporary path                	
+Threads                             	32
+Compressed                          	0
+Verbosity                           	3
+Add backtrace                       	false
+Alignment mode                      	3
+Alignment mode                      	0
+Allow wrapped scoring               	false
+E-value threshold                   	0.001
+Seq. id. threshold                  	0.9
+Min alignment length                	0
+Seq. id. mode                       	0
+Alternative alignments              	0
+Max reject                          	2147483647
+Max accept                          	2147483647
+Score bias                          	0
+Realign hits                        	false
+Realign score bias                  	-0.2
+Realign max seqs                    	2147483647
+Correlation score weight            	0
+Gap open cost                       	aa:11,nucl:5
+Gap extension cost                  	aa:1,nucl:2
+Zdrop                               	40
+Rescore mode                        	0
+Remove hits by seq. id. and coverage	false
+Sort results                        	0
+Cluster mode                        	0
+Max connected component depth       	1000
+Similarity type                     	2
+Weight file name                    	
+Cluster Weight threshold            	0.9
+Set mode                            	false
+Single step clustering              	false
+Cascaded clustering steps           	3
+Cluster reassign                    	false
+Remove temporary files              	true
+Force restart with latest tmp       	false
+MPI runner                          	
+k-mers per sequence                 	21
+Scale k-mers per sequence           	aa:0.000,nucl:0.200
+Adjust k-mer length                 	false
+Shift hash                          	67
+Include only extendable             	false
+Skip repeating k-mers               	false
+Database type                       	0
+Shuffle input database              	true
+Createdb mode                       	1
+Write lookup file                   	0
+Offset of numeric ids               	0
+Use GPU                             	0
+
+createdb /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out/assembly.faa /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input --createdb-mode 1 --write-lookup 0 --threads 32 
+
+Shuffle database cannot be combined with --createdb-mode 1
+We recompute with --shuffle 0
+Converting sequences
+[
+Time for merging to input_h: 0h 0m 0s 8ms
+Time for merging to input: 0h 0m 0s 8ms
+Database type: Aminoacid
+Time for processing: 0h 0m 0s 102ms
+Create directory /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp
+cluster /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp -s 7 --max-seqs 20 -c 0.8 --cov-mode 1 --spaced-kmer-mode 1 --threads 32 --alignment-mode 3 -e 0.001 --min-seq-id 0.9 --remove-tmp-files 1 
+
+Set cluster mode GREEDY MEM
+Set cluster iterations to 3
+linclust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --alph-size aa:13,nucl:5 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 -k 0 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --rescore-mode 0 --filter-hits 0 --sort-results 0 --remove-tmp-files 1 --force-reuse 0 
+
+kmermatcher /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:13,nucl:5 --min-seq-id 0.9 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --cov-mode 1 -k 0 -c 0.8 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+kmermatcher /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:13,nucl:5 --min-seq-id 0.9 --kmer-per-seq 21 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --cov-mode 1 -k 0 -c 0.8 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Database size: 4802 type: Aminoacid
+Reduced amino acid alphabet: (A S T) (C) (D B N) (E Q Z) (F Y) (G) (H) (I V) (K R) (L J M) (P) (W) (X) 
+
+Generate k-mers list for 1 split
+[=================================================================] 4.80K 0s 13ms
+Sort kmer 0h 0m 0s 36ms
+Sort by rep. sequence 0h 0m 0s 0ms
+Time for fill: 0h 0m 0s 0ms
+Time for merging to pref: 0h 0m 0s 7ms
+Time for processing: 0h 0m 0s 167ms
+rescorediagonal /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore1 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --rescore-mode 0 --wrapped-scoring 0 --filter-hits 0 -e 0.001 -c 0.8 -a 0 --cov-mode 1 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 32 --compressed 0 -v 3 
+
+[============================================================] =4.80K==== 0s 15ms
+Time for merging to pref_rescore1: 0h 0m 0s 225ms
+Time for processing: 0h 0m 0s 601ms
+clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pre_clust --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 0s 60ms
+
+Size of the sequence database: 4802
+Size of the alignment database: 4802
+Number of clusters: 4718
+
+Writing results 0h 0m 0s 0ms
+Time for merging to pre_clust: 0h 0m 0s 7ms
+Time for processing: 0h 0m 0s 156ms
+createsubdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/order_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 63ms
+createsubdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/order_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter1 -v 3 --subdb-mode 1 
+
+Time for merging to pref_filter1: 0h 0m 0s 8ms
+Time for processing: 0h 0m 0s 47ms
+filterdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter2 --filter-file /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/order_redundancy --threads 32 --compressed 0 -v 3 
+
+Filtering using file(s)
+[=================================================================] 4.72K 0s 10ms
+Time for merging to pref_filter2: 0h 0m 0s 223ms
+Time for processing: 0h 0m 0s 553ms
+rescorediagonal /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore2 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --rescore-mode 1 --wrapped-scoring 0 --filter-hits 1 -e 0.001 -c 0.8 -a 0 --cov-mode 1 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 32 --compressed 0 -v 3 
+
+[===============================================================] 4.72K 0s 11ms
+==Time for merging to pref_rescore2: 0h 0m 0s 221ms
+Time for processing: 0h 0m 0s 710ms
+align /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/aln --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 32 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 4718 type: Aminoacid
+Target database size: 4718 type: Aminoacid
+Calculation of alignments
+[=================================================================] 4.72K 0s 37ms
+Time for merging to aln: 0h 0m 0s 222ms
+4793 alignments calculated
+4726 sequence pairs passed the thresholds (0.986021 of overall calculated)
+1.001696 hits per query sequence
+Time for processing: 0h 0m 0s 683ms
+clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/aln /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/clust --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 0s 54ms
+
+Size of the sequence database: 4718
+Size of the alignment database: 4718
+Number of clusters: 4710
+
+Writing results 0h 0m 0s 0ms
+Time for merging to clust: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 159ms
+mergeclusters /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pre_clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/clust --threads 32 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 4.72K 0s 15ms
+Clustering step 2
+[=================================================================] 4.71K 0s 49ms
+Write merged clustering
+[=================================================================] 4.80K 0s 253ms
+Time for merging to clu_redundancy: 0h 0m 0s 220ms
+Time for processing: 0h 0m 0s 617ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter1 -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore1 -v 3 
+
+Time for processing: 0h 0m 0s 83ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pre_clust -v 3 
+
+Time for processing: 0h 0m 0s 7ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/input_step_redundancy_h -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_filter2 -v 3 
+
+Time for processing: 0h 0m 0s 82ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/pref_rescore2 -v 3 
+
+Time for processing: 0h 0m 0s 86ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/aln -v 3 
+
+Time for processing: 0h 0m 0s 89ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/linclust/5331449764166268672/clust -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+createsubdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 55ms
+prefilter /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step0 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -s 1 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 1 --comp-bias-corr 0 --comp-bias-corr-scale 1 --diag-score 0 --exact-kmer-matching 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --min-ungapped-score 0 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 32 --compressed 0 -v 3 
+
+Query database size: 4710 type: Aminoacid
+Estimated memory consumption: 995M
+Target database size: 4710 type: Aminoacid
+Index table k-mer threshold: 154 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 4.71K 0s 20ms
+Index table: Masked residues: 6574
+Index table: fill
+[=================================================================] 4.71K 0s 15ms
+Index statistics
+Entries:          643801
+DB size:          491 MB
+Avg k-mer size:   0.010059
+Top 10 k-mers
+    GPGGTL	30
+    GGRRIA	15
+    GGQRIA	14
+    NGGSMK	9
+    PPRRDI	8
+    PTGDAK	8
+    SEFHGA	7
+    GADLPF	7
+    FGEGTG	7
+    FKIDGH	7
+Time for index table init: 0h 0m 0s 646ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 154
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 4710
+Target db start 1 to 4710
+[=================================================================] 4.71K 0s 25ms
+
+1.865791 k-mers per position
+149 DB matches per sequence
+0 overflows
+1 sequences passed prefiltering per query sequence
+1 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step0: 0h 0m 0s 221ms
+Time for processing: 0h 0m 1s 574ms
+align /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step0 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step0 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 32 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 4710 type: Aminoacid
+Target database size: 4710 type: Aminoacid
+Calculation of alignments
+[=================================================================] 4.71K 0s 58ms
+Time for merging to aln_step0: 0h 0m 0s 215ms
+6501 alignments calculated
+4710 sequence pairs passed the thresholds (0.724504 of overall calculated)
+1.000000 hits per query sequence
+Time for processing: 0h 0m 0s 700ms
+clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step0 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step0 --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 0s 22ms
+
+Size of the sequence database: 4710
+Size of the alignment database: 4710
+Number of clusters: 4710
+
+Writing results 0h 0m 0s 1ms
+Time for merging to clu_step0: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 119ms
+createsubdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step0 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 -v 3 --subdb-mode 1 
+
+Time for merging to input_step1: 0h 0m 0s 8ms
+Time for processing: 0h 0m 0s 56ms
+prefilter /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step1 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -s 4 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 1 --comp-bias-corr 1 --comp-bias-corr-scale 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --min-ungapped-score 60 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 32 --compressed 0 -v 3 
+
+Query database size: 4710 type: Aminoacid
+Estimated memory consumption: 995M
+Target database size: 4710 type: Aminoacid
+Index table k-mer threshold: 127 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 4.71K 0s 24ms
+Index table: Masked residues: 6574
+Index table: fill
+[=================================================================] 4.71K 0s 28ms
+Index statistics
+Entries:          1394237
+DB size:          496 MB
+Avg k-mer size:   0.021785
+Top 10 k-mers
+    GPGGTL	30
+    GQQVAR	20
+    GGRRIA	15
+    GGQRIA	14
+    SGQQAI	13
+    SGGSLR	13
+    ALGNGK	12
+    LLDPAL	12
+    LLETLD	11
+    ALGSGK	11
+Time for index table init: 0h 0m 0s 663ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 127
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 4710
+Target db start 1 to 4710
+[=================================================================] 4.71K 0s 231ms
+
+61.117603 k-mers per position
+659 DB matches per sequence
+0 overflows
+2 sequences passed prefiltering per query sequence
+1 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step1: 0h 0m 0s 226ms
+Time for processing: 0h 0m 1s 829ms
+align /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step1 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 32 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 4710 type: Aminoacid
+Target database size: 4710 type: Aminoacid
+Calculation of alignments
+[=================================================================] 4.71K 0s 105ms
+Time for merging to aln_step1: 0h 0m 0s 227ms
+9959 alignments calculated
+4711 sequence pairs passed the thresholds (0.473039 of overall calculated)
+1.000212 hits per query sequence
+Time for processing: 0h 0m 0s 741ms
+clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step1 --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 0s 38ms
+
+Size of the sequence database: 4710
+Size of the alignment database: 4710
+Number of clusters: 4709
+
+Writing results 0h 0m 0s 2ms
+Time for merging to clu_step1: 0h 0m 0s 8ms
+Time for processing: 0h 0m 0s 141ms
+createsubdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 -v 3 --subdb-mode 1 
+
+Time for merging to input_step2: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 59ms
+prefilter /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step2 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -s 7 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 20 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.8 --cov-mode 1 --comp-bias-corr 1 --comp-bias-corr-scale 1 --diag-score 1 --exact-kmer-matching 0 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --mask-n-repeat 0 --min-ungapped-score 60 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 32 --compressed 0 -v 3 
+
+Query database size: 4709 type: Aminoacid
+Estimated memory consumption: 995M
+Target database size: 4709 type: Aminoacid
+Index table k-mer threshold: 100 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 4.71K 0s 29ms
+Index table: Masked residues: 6574
+Index table: fill
+[=================================================================] 4.71K 0s 30ms
+Index statistics
+Entries:          1405379
+DB size:          496 MB
+Avg k-mer size:   0.021959
+Top 10 k-mers
+    GPGGTL	30
+    GQQVAR	20
+    GGRRIA	15
+    GGQRIA	14
+    SGQQAI	13
+    SGGSLR	13
+    ALGNGK	12
+    LLDPAL	12
+    LLETLD	11
+    ALGSGK	11
+Time for index table init: 0h 0m 0s 678ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 100
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 4709
+Target db start 1 to 4709
+[=================================================================] 4.71K 2s 815ms
+
+1062.497894 k-mers per position
+7980 DB matches per sequence
+0 overflows
+3 sequences passed prefiltering per query sequence
+2 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step2: 0h 0m 0s 217ms
+Time for processing: 0h 0m 4s 472ms
+align /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step2 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.9 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.8 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 32 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 4709 type: Aminoacid
+Target database size: 4709 type: Aminoacid
+Calculation of alignments
+[=================================================================] 4.71K 0s 117ms
+Time for merging to aln_step2: 0h 0m 0s 221ms
+13456 alignments calculated
+4709 sequence pairs passed the thresholds (0.349955 of overall calculated)
+1.000000 hits per query sequence
+Time for processing: 0h 0m 0s 804ms
+clust /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step2 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step2 --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 32 --compressed 0 -v 3 --cluster-weight-threshold 0.9 --set-mode 0 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 0s 34ms
+
+Size of the sequence database: 4709
+Size of the alignment database: 4709
+Number of clusters: 4709
+
+Writing results 0h 0m 0s 0ms
+Time for merging to clu_step2: 0h 0m 0s 7ms
+Time for processing: 0h 0m 0s 132ms
+mergeclusters /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_redundancy /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step0 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step1 /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step2 --threads 32 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 4.71K 0s 11ms
+Clustering step 2
+[=================================================================] 4.71K 0s 54ms
+Clustering step 3
+[=================================================================] 4.71K 0s 76ms
+Clustering step 4
+[=================================================================] 4.71K 0s 104ms
+Write merged clustering
+[=================================================================] 4.80K 0s 314ms
+Time for merging to clu: 0h 0m 0s 227ms
+Time for processing: 0h 0m 0s 743ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 83ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step_redundancy_h -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step0 -v 3 
+
+Time for processing: 0h 0m 0s 86ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step0 -v 3 
+
+Time for processing: 0h 0m 0s 88ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step0 -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step1 -v 3 
+
+Time for processing: 0h 0m 0s 87ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step1 -v 3 
+
+Time for processing: 0h 0m 0s 86ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step1 -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/pref_step2 -v 3 
+
+Time for processing: 0h 0m 0s 84ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/aln_step2 -v 3 
+
+Time for processing: 0h 0m 0s 85ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/clu_step2 -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1 -v 3 
+
+Time for processing: 0h 0m 0s 10ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step1_h -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2 -v 3 
+
+Time for processing: 0h 0m 0s 10ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_tmp/16697156415445072407/input_step2_h -v 3 
+
+Time for processing: 0h 0m 0s 8ms
+createtsv /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/cluster.tsv --threads 32 -v 3 
+
+Time for merging to cluster.tsv: 0h 0m 0s 288ms
+Time for processing: 0h 0m 0s 649ms
+result2repseq /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_rep --db-load-mode 0 --compressed 0 --threads 32 -v 3 
+
+[=================================================================] 4.71K 0s 14ms
+Time for merging to clu_rep: 0h 0m 0s 297ms
+Time for processing: 0h 0m 0s 761ms
+result2flat /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_rep /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/rep_seq.fasta --use-fasta-header -v 3 
+
+Time for processing: 0h 0m 0s 56ms
+createseqfiledb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_seqs --threads 32 -v 3 
+
+[=================================================================] 4.71K 0s 16ms
+Time for merging to clu_seqs: 0h 0m 0s 212ms
+Time for processing: 0h 0m 0s 628ms
+result2flat /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_seqs /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/all_seqs.fasta -v 3 
+
+Time for processing: 0h 0m 0s 114ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input -v 3 
+
+Time for processing: 0h 0m 0s 11ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/input_h -v 3 
+
+Time for processing: 0h 0m 0s 9ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_seqs -v 3 
+
+Time for processing: 0h 0m 0s 80ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu_rep -v 3 
+
+Time for processing: 0h 0m 0s 10ms
+rmdb /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp/11538124078997052889/clu -v 3 
+
+Time for processing: 0h 0m 0s 101ms
+MMseqs2 clustering completed!
+Cluster results: /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_out/ecoli_prot90_cluster.tsv

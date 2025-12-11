@@ -1,0 +1,31 @@
+=== Paralog Analysis ===
+Protein file: /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out/assembly.faa
+Cluster file: /home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_out/ecoli_prot90_cluster.tsv
+
+Parsing protein names...
+Found 4802 proteins
+
+Analyzing clusters...
+Found 55 paralogous proteins
+
+Saving results to: /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs.tsv
+
+Creating visualization...
+Visualization saved: /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs_top10.png
+
+=== Summary ===
+Total paralogous proteins: 55
+Highest copy number: 9
+
+Top 5 paralogs:
+        protein_id                        protein_name  copy_number
+1644  LNNEOK_08750              IS1 family transposase            9
+1643  LNNEOK_08745   IS1 family IS1A transposase ORF A            7
+668   LNNEOK_03510    IS3 family IS2 transposase ORF A            6
+548   LNNEOK_02865      IS6 family IS15DIV transposase            5
+1665  LNNEOK_08900  IS3 family IS629 transposase ORF B            5
+
+Done!
+Analysis completed!
+Results: /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs.tsv
+Plot: /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs_top10.png

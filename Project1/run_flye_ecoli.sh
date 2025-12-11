@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #SBATCH --job-name=flye_ecoli
 #SBATCH --output=logs/flye_ecoli_%j.out
@@ -25,3 +24,5 @@ apptainer exec \
 
 echo "Flye assembly completed!"
 echo "Assembly output: $OUTDIR/assembly.fasta"
+
+

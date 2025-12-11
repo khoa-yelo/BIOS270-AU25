@@ -1,0 +1,11 @@
+[samfaipath] build FASTA index...
+[M::mm_idx_gen::0.169*1.02] collected minimizers
+[M::mm_idx_gen::0.193*3.05] sorted minimizers
+[M::main::0.193*3.05] loaded/built the index for 12 target sequence(s)
+[M::mm_mapopt_update::0.208*2.89] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 12
+[M::mm_idx_stat::0.220*2.79] distinct minimizers: 916644 (97.83% are singletons); average occurrences: 1.034; average spacing: 5.349; total length: 5072098
+[M::worker_pipeline::2.288*1.29] mapped 17 sequences
+[M::main] Version: 2.24-r1155-dirty
+[M::main] CMD: flye-minimap2 -x map-ont -t 32 -a -p 0.5 -N 10 --sam-hit-only -L -K 1G -z 1000 -Q --secondary-seq -I 64G /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_flye_out/40-polishing/filtered_contigs.fasta /home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_flye_out/30-contigger/graph_final.fasta
+[M::main] Real time: 2.313 sec; CPU: 2.963 sec; Peak RSS: 0.155 GB

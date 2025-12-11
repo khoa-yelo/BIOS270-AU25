@@ -1,17 +1,7 @@
-cd ~/repos/BIOS270-AU25/Project1
 
-cat > Project1_Writeup.md << 'EOF'
 # Project 1: Genomics Pipeline - E. coli Paralog Analysis
 
-**Student:** Isabel Goldaracena  
-**Date:** December 2024  
-**Course:** BIOS270-AU25
-
 ---
-
-## Overview
-
-This project implements an end-to-end genomics pipeline to identify paralogous protein-coding genes in *E. coli* starting from raw Nanopore FASTQ sequencing data.
 
 **Pipeline Steps:**
 1. Genome assembly with Flye
@@ -43,10 +33,7 @@ This project implements an end-to-end genomics pipeline to identify paralogous p
 
 # Input and output paths
 FASTQ="/farmshare/home/classes/bios/270/data/project1/SRR33251869.fastq"
-OUTDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_flye_out"
-
-# Container path
-CONTAINER="/farmshare/user_data/isagolda/containers/bioinformatics_latest.sif"
+OUTDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_flye_out"
 
 # Load Apptainer
 module load apptainer
@@ -54,8 +41,8 @@ module load apptainer
 # Run Flye
 apptainer exec \
   -B /farmshare/home/classes/bios/270 \
-  -B /home/users/isagolda/repos/BIOS270-AU25/Project1 \
-  $CONTAINER \
+  -B $SCRATCH \
+  /farmshare/home/classes/bios/270/envs/bioinformatics_latest.sif \
   flye --nano-raw $FASTQ \
        --out-dir $OUTDIR \
        --threads 32
@@ -65,12 +52,7 @@ echo "Assembly output: $OUTDIR/assembly.fasta"
 ```
 
 ### Assembly Results
-
-- **Total length:** 5,072,098 bp
-- **Number of contigs:** 12
-- **Largest contig:** 4,733,170 bp
-- **N50:** 4,733,170 bp
-- **Mean coverage:** 72x
+![Results](Results1.png)
 
 ---
 
@@ -78,7 +60,7 @@ echo "Assembly output: $OUTDIR/assembly.fasta"
 
 ### Script: `run_bakta_ecoli.sh`
 ```bash
-#!/bin/bash
+!/bin/bash
 #SBATCH --job-name=bakta_ecoli
 #SBATCH --output=logs/bakta_ecoli_%j.out
 #SBATCH --error=logs/bakta_ecoli_%j.err
@@ -87,11 +69,11 @@ echo "Assembly output: $OUTDIR/assembly.fasta"
 #SBATCH --time=02:00:00
 
 # Input and output paths
-ASSEMBLY="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_flye_out/assembly.fasta"
-OUTDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_bakta_out"
+ASSEMBLY="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_flye_out/assembly.fasta"
+OUTDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out"
 BAKTA_DB="/farmshare/home/classes/bios/270/data/archive/bakta_db/db"
 
-# Container path (Bakta uses a different container!)
+# Container path 
 CONTAINER="/farmshare/home/classes/bios/270/envs/bakta_1.8.2--pyhdfd78af_0.sif"
 
 # Load Apptainer
@@ -110,13 +92,11 @@ apptainer exec \
 
 echo "Bakta annotation completed!"
 echo "Protein sequences: $OUTDIR/assembly.faa"
+
 ```
 
 ### Annotation Results
-
-- **Total proteins predicted:** [Number from your results]
-- **Key output:** `assembly.faa` (protein sequences)
-
+![Results](Results2.png)
 ---
 
 ## Step 3: Protein Clustering with MMseqs2
@@ -132,7 +112,7 @@ echo "Protein sequences: $OUTDIR/assembly.faa"
 #SBATCH --time=00:30:00
 
 # Input and output paths
-PROTEIN_FAA="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_bakta_out/assembly.faa"
+PROTEIN_FAA="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out/assembly.faa"
 OUTDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_out"
 PREFIX="ecoli_prot90"
 TMPDIR="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_tmp"
@@ -169,11 +149,9 @@ echo "Cluster results: $OUTDIR/${PREFIX}_cluster.tsv"
 rm -rf $TMPDIR
 ```
 
-### Clustering Parameters
+### Results
 
-- **Minimum sequence identity:** 90%
-- **Coverage:** 80%
-- **Sensitivity:** 7
+There seem to be 4709 unique clusters (proteins with paralogs)
 
 ---
 
@@ -190,12 +168,12 @@ rm -rf $TMPDIR
 #SBATCH --time=00:15:00
 
 # Input files
-FAA="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_bakta_out/assembly.faa"
+FAA="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_bakta_out/assembly.faa"
 CLUSTER="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_mmseqs_out/ecoli_prot90_cluster.tsv"
 
 # Output files
-TSV="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_paralogs.tsv"
-PNG="/home/users/isagolda/repos/BIOS270-AU25/Project1/results/ecoli_paralogs_top10.png"
+TSV="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs.tsv"
+PNG="/home/users/isagolda/repos/BIOS270-AU25/Project1/ecoli_paralogs_top10.png"
 
 # Container path
 CONTAINER="/farmshare/user_data/isagolda/containers/bioinformatics_latest.sif"
@@ -203,7 +181,7 @@ CONTAINER="/farmshare/user_data/isagolda/containers/bioinformatics_latest.sif"
 # Load Apptainer
 module load apptainer
 
-# Run analysis
+# Run analysis (INSIDE CONTAINER via apptainer exec)
 apptainer exec \
   -B /home/users/isagolda/repos/BIOS270-AU25/Project1 \
   $CONTAINER \
@@ -222,50 +200,5 @@ echo "Plot: $PNG"
 ---
 
 ## Results
-
-### Summary Statistics
-
-- **Total paralogous proteins:** [Your number]
-- **Highest copy number:** [Your number]
-- **Proteins with 2 copies:** [Your number]
-- **Proteins with 3+ copies:** [Your number]
-
-### Top 10 Most Frequent Paralogs
-
-![Top 10 Paralogs](results/ecoli_paralogs_top10.png)
-
-### Complete Paralog Table
-
-See: [`results/ecoli_paralogs.tsv`](results/ecoli_paralogs.tsv)
-
----
-
-## Biological Interpretation
-
-[Add your interpretation here - what types of proteins are most commonly duplicated? Why might these be paralogs in E. coli?]
-
-Common paralogous proteins in bacteria include:
-- **Transposases** - Mobile genetic elements that can move around the genome
-- **Integrases** - Enzymes that integrate foreign DNA
-- **ABC transporters** - Membrane proteins for nutrient uptake
-- **Phage proteins** - Remnants of viral infections
-
----
-
-## Conclusion
-
-[Add your conclusions here]
-
----
-
-## Files Included
-- `run_flye_ecoli.sh` - SLURM script for genome assembly
-- `run_bakta_ecoli.sh` - SLURM script for genome annotation
-- `run_mmseqs_ecoli.sh` - SLURM script for protein clustering
-- `run_analysis_ecoli.sh` - SLURM script for paralog analysis
-- `analyze_paralogs.py` - Python script for analysis and visualization-dw `results/ecoli_paralogs.tsv` - Complete paralog results
-- `results/ecoli_paralogs_top10.png` - Visualization :1,$
-1,$1,$d
-1,$d
-1,$d
-d
+Top 10 paralogs in e.coli
+![Analysis](ecoli_paralogs_top10.png)

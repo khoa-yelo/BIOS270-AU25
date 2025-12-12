@@ -49,7 +49,7 @@ if __name__ == "__main__":
     db = BacteriaDatabase(args.database_path)
     print("Total number of record ids: ", len(db.get_all_record_ids()))
     all_protein_ids = []
-    # db.index_record_ids()
+    db.index_record_ids()
     tic = time.time()
     for i, record_id in enumerate(db.get_all_record_ids()):
         protein_ids = db.get_protein_ids_from_record_id(record_id)

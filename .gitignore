@@ -1,0 +1,6 @@
+*.log
+.nextflow/
+.nextflow.log*
+work/
+envs/
+

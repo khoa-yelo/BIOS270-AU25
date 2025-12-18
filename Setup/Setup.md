@@ -89,7 +89,7 @@ When installing, choose a prefix location on a disk with plenty of storage (i.e.
 
 ```bash
 "${SHELL}" <(curl -L https://micro.mamba.pm/install.sh)
-# Prefix location? [~/micromamba] $SCRATCH/envs/micromamba
+# Prefix location? [~/micromamba] (e.g. /farmshare/user_data/khoang99/envs/micromamba)
 source ~/.bashrc
 # Test your installation
 micromamba --version

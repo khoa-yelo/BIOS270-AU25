@@ -1,0 +1,80 @@
+protein_id	protein_name	copy_number
+LGEMPL_04360	LGEMPL_04360 lysine--tRNA ligase	2
+LGEMPL_14580	LGEMPL_14580 lysine--tRNA ligase	2
+LGEMPL_16825	LGEMPL_16825 DMSO/selenate family reductase complex B subunit	2
+LGEMPL_20025	LGEMPL_20025 DMSO/selenate family reductase complex B subunit	2
+LGEMPL_24960	LGEMPL_24960 IS6 family IS15DIV transposase	11
+LGEMPL_24990	LGEMPL_24990 IS6 family IS15DIV transposase	11
+LGEMPL_25010	LGEMPL_25010 IS6 family IS15DIV transposase	11
+LGEMPL_25190	LGEMPL_25190 IS6 family IS15DIV transposase	11
+LGEMPL_25365	LGEMPL_25365 IS6 family transposase	11
+LGEMPL_25625	LGEMPL_25625 IS6 family IS15DIV transposase	11
+LGEMPL_25855	LGEMPL_25855 IS6 family IS15DIV transposase	11
+LGEMPL_25910	LGEMPL_25910 IS6 family IS15DIV transposase	11
+LGEMPL_25970	LGEMPL_25970 IS6 family IS15DIV transposase	11
+LGEMPL_25980	LGEMPL_25980 IS6 family IS15DIV transposase	11
+LGEMPL_25995	LGEMPL_25995 IS6 family IS15DIV transposase	11
+LGEMPL_25035	LGEMPL_25035 Tn3-like element ISPa38 family transposase	2
+LGEMPL_24955	LGEMPL_24955 Tn3 family transposase	2
+LGEMPL_25285	LGEMPL_25285 IS5 family ISKpn26 transposase	5
+LGEMPL_25610	LGEMPL_25610 IS5 family transposase	5
+LGEMPL_25710	LGEMPL_25710 IS5 family transposase	5
+LGEMPL_25715	LGEMPL_25715 Transposase, IS4-like family protein	5
+LGEMPL_25615	LGEMPL_25615 Transposase	5
+LGEMPL_25290	LGEMPL_25290 glutaredoxin-dependent arsenate reductase	2
+LGEMPL_25690	LGEMPL_25690 glutaredoxin-dependent arsenate reductase	2
+LGEMPL_25295	LGEMPL_25295 Na+/H+ antiporter NhaD or related arsenite permease	2
+LGEMPL_25685	LGEMPL_25685 arsenite efflux transporter membrane subunit ArsB	2
+LGEMPL_25310	LGEMPL_25310 As(III)-sensing metalloregulatory transcriptional repressor ArsR	2
+LGEMPL_25675	LGEMPL_25675 As(III)-sensing metalloregulatory transcriptional repressor ArsR	2
+LGEMPL_12185	LGEMPL_12185 Oxaloacetate decarboxylase gamma chain	2
+LGEMPL_10845	LGEMPL_10845 putative oxaloacetate decarboxylase gamma chain	2
+LGEMPL_20780	LGEMPL_20780 ISNCY family transposase	2
+LGEMPL_25640	LGEMPL_25640 ISNCY family transposase	2
+LGEMPL_20785	LGEMPL_20785 TIR domain-containing protein	2
+LGEMPL_25645	LGEMPL_25645 TIR domain-containing protein	2
+LGEMPL_20805	LGEMPL_20805 IS66 family ISKpn49 transposase	2
+LGEMPL_24200	LGEMPL_24200 IS66 family ISKpn49 transposase	2
+LGEMPL_20810	LGEMPL_20810 IS66 family insertion sequence element accessory protein TnpB	2
+LGEMPL_24205	LGEMPL_24205 IS66 family insertion sequence element accessory protein TnpB	2
+LGEMPL_20815	LGEMPL_20815 Transposase InsE and inactivated derivatives	2
+LGEMPL_24210	LGEMPL_24210 Transposase InsE and inactivated derivatives	2
+LGEMPL_25500	LGEMPL_25500 IS1 family transposase ORF B	2
+LGEMPL_25535	LGEMPL_25535 Transposase and inactivated derivatives, IS1 family	2
+LGEMPL_25860	LGEMPL_25860 RNAI modulator protein rop	2
+LGEMPL_25890	LGEMPL_25890 RNAI modulator protein rop	2
+LGEMPL_06365	LGEMPL_06365 elongation factor Tu	2
+LGEMPL_09550	LGEMPL_09550 elongation factor Tu	2
+LGEMPL_19180	LGEMPL_19180 Lipoprotein	2
+LGEMPL_19185	LGEMPL_19185 DUF3304 domain-containing protein	2
+LGEMPL_11295	LGEMPL_11295 IS5 family IS903B transposase	3
+LGEMPL_25420	LGEMPL_25420 IS5 family IS903B transposase	3
+LGEMPL_25360	LGEMPL_25360 IS5 family transposase	3
+LGEMPL_11310	LGEMPL_11310 Maltoporin	2
+LGEMPL_08055	LGEMPL_08055 Maltoporin (phage lambda and maltose receptor)	2
+LGEMPL_06875	LGEMPL_06875 IS110 family IS5075 transposase	6
+LGEMPL_24950	LGEMPL_24950 IS110 family IS5075 transposase	6
+LGEMPL_25030	LGEMPL_25030 IS110 family IS5075 transposase	6
+LGEMPL_25235	LGEMPL_25235 IS110 family IS5075 transposase	6
+LGEMPL_25315	LGEMPL_25315 IS110 family IS5075 transposase	6
+LGEMPL_25445	LGEMPL_25445 IS110 family IS5075 transposase	6
+LGEMPL_19860	LGEMPL_19860 class I fumarate hydratase FumA	2
+LGEMPL_19705	LGEMPL_19705 class I fumarate hydratase FumA	2
+LGEMPL_26010	LGEMPL_26010 DNA methyltransferase	2
+LGEMPL_26045	LGEMPL_26045 DNA methyltransferase	2
+LGEMPL_26015	LGEMPL_26015 Plasmid mobilization relaxosome protein MobC	2
+LGEMPL_26050	LGEMPL_26050 Plasmid mobilization relaxosome protein MobC	2
+LGEMPL_26020	LGEMPL_26020 Protein MobB	2
+LGEMPL_26055	LGEMPL_26055 Protein MobB	2
+LGEMPL_26025	LGEMPL_26025 MbeD family mobilization/exclusion protein	2
+LGEMPL_26060	LGEMPL_26060 MbeD family mobilization/exclusion protein	2
+LGEMPL_26030	LGEMPL_26030 Addiction module toxin RelE	2
+LGEMPL_26065	LGEMPL_26065 Addiction module toxin RelE	2
+LGEMPL_26035	LGEMPL_26035 NadS family protein	2
+LGEMPL_26070	LGEMPL_26070 NadS family protein	2
+LGEMPL_26040	LGEMPL_26040 replication initiation protein	2
+LGEMPL_26075	LGEMPL_26075 replication initiation protein	2
+LGEMPL_10850	LGEMPL_10850 sodium-extruding oxaloacetate decarboxylase subunit alpha	2
+LGEMPL_12180	LGEMPL_12180 sodium-extruding oxaloacetate decarboxylase subunit alpha	2
+LGEMPL_10855	LGEMPL_10855 Oxaloacetate decarboxylase beta chain	2
+LGEMPL_12175	LGEMPL_12175 Oxaloacetate decarboxylase beta chain	2
